@@ -1,6 +1,6 @@
 # estudos
 
- <h2>Tudo que estudei.<h2>
+ <h2>Tudo que estudei.</h2>
 
  <ol type="1">
      <li>
@@ -30,7 +30,7 @@
  </ul>
 
 
-<h2> O que pretendo Estudar: <h2>
+<h2> O que pretendo Estudar: </h2>
 <p> Após concluir algumas etapas, como avançar no PHP e aprender React </p>
 
 <ul>
