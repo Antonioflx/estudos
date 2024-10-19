@@ -1,0 +1,75 @@
+/* CONFIGURACAO geral */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CONFIGURACAO Header */
+
+header{
+    background-color: bisque;
+    padding-top: 40px;
+}
+
+h1,h2,p#imgCent {
+    text-align: center;
+}
+
+p#imgCent {
+    padding-bottom: 10px;
+    margin-bottom: -40px;
+}
+
+p#observacao{ /* Verificar aqui para ficar na mesma pos do Nav */
+    text-align: right;
+    padding-right: 40px;
+    font-weight: bolder;
+}
+
+nav {
+    padding: 0px 10px 5px 20px;
+}
+
+/* CONFIGURACAO Body */
+
+body {
+    height: 100dvh;
+    background-color: gray;
+    font: normal 1.5em arial, Helvetica, sans-serif;  
+}
+
+/* CONFIGURACAO Main */
+
+main {
+    background-color: aliceblue;
+    background-size: cover;
+    background-repeat: repeat;
+    width: 70vw;
+    margin: auto;
+}
+
+/* CONFIGURACAO Section*/
+
+section {
+    padding: 50px 10px 10px 10px;
+}
+
+/* CONFIGURACAO Article */
+article {
+    padding: 0px 15px 15px 15px;
+}
+
+article > h1, h2, h4,p {
+    padding: 15px;
+}
+
+
+/* CONFIGURACAO Lista */
+ul {
+    padding-left: 50px;
+}
+
+li {
+    padding: 15px 5px 5px 5px;
+}
