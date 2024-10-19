@@ -1,14 +1,15 @@
 # estudos
  Tudo que estudei.
 
- 1) <strong>Visual (portugol)</strong> -> Guanabara;
- 2) <strong>HTML5 e CSS3 (Intermediário, quase avançado)</strong> -> Guanabara;
+ 1) Visual (portugol) -> Guanabara;
+ 2) HTML5 e CSS3 (Intermediário, quase avançado) -> Guanabara;
     Projetos iniciantes, só para ver a funcionalidade;
- 3) <strong>JavaScript(iniciante)</strong> -> Guanabara;
+ 3) JavaScript(iniciante) -> Guanabara;
     Projetos iniciantes, só para ver a funcionalidade;
- 4) <strong>JavaScript(intermediário, quase avançado)</strong> -> Traversy Media;
+ 4) JavaScript(intermediário, quase avançado) -> Traversy Media;
     Projeto -> Shopping List.
- 5) <strong>PHP8(básico)</strong> -> Guanabara;
- 6) <strong>Linguagem C</strong> (intermediário e avançando) -> Progame seu futuro; 
- 7) <strong>React</strong> -> freeCodeCamp.org;
-<strong>
+ 5) PHP8(básico) -> Guanabara;
+ 6) Linguagem C (intermediário e avançando) -> Progame seu futuro; 
+ 7) React -> freeCodeCamp.org;
+
+ 
