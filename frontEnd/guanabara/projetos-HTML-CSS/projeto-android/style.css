@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+}
+
+
+body{
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #1a5c37, #063d1e);
+    color: white;
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: -21px -8px -8px -8px;
+}
+header > h1{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    font-size: 2em;
+}
+header > p{
+    color: #bcffd7f8;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    text-align: center;
+}
+
+nav{
+    background-color:#063d1e;
+    text-align: left;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: -16px -8px -7px -8px;
+    font-size: 1em;
+}
+
+nav > a{
+    padding-left: 17px;
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: #1A5C38;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+    
+main{
+    background-color: white;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1025px;
+    padding: 13px 15px 5px 20px;
+    margin-top: 8px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+p{
+    text-align: justify;
+    text-indent: 30px;
+    padding-right: 5px;
+    margin: 15px 0px;
+}
+
+p#center{
+    padding: 0px;
+    text-align: center;
+    text-indent: 0px;
+    margin: 0px;
+}
+h2{
+    font-family: idroid, cursive;
+    color: #35a568;
+}
+
+.back{
+    background-image: linear-gradient(to right, #C9EDD9, white);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+}
+
+strong{
+    color: #268a51;
+}
+
+.branco{
+    color: white;
+}
+
+.branco:hover{
+    text-decoration: underline;
+}
+
+div.video{
+    background-color: #063d1e;
+    padding: 20px;
+    padding-bottom: 56.3%;
+    margin: 10px -15px 30px -20px;
+    position: relative;
+
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.conteudo > div#center {
+    text-align: center;
+}
+
+section#mais > h3{
+    background-color: #2FA866;
+    color: rgb(250, 245, 245);
+    padding: 11px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px;
+}
+
+aside#especial{
+    background-color: #C5EBD6;
+    padding: 2px 6px 8px 13px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*PS: 00A0 - ESPAÇO Para copiar o emoji, coloca Barra invertida + código*/
+
+aside#especial > ul{
+    columns: 2;
+}
+li:before {
+    content:'✔️'
+}
+
+ul#direita{
+    display: block;
+    justify-content: center;
+}
+
+footer{
+    background-color: #1A5C38;
+    margin: 13px -7px -8px -8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.822);
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: #268a51;
+}
+
+a.link:hover{
+    text-decoration: underline;
+}
+
+a.link:active{
+    color: black;
+}
+
+a.menu:hover{
+    border-radius: 10px;
+    padding: 7px;
+    margin: 7px;
+}
+
+.white{
+    color: white;
+    text-decoration: none;
+}
+.white:hover{
+    text-decoration: underline;
+}
+
+abbr{
+    text-decoration: underline;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
