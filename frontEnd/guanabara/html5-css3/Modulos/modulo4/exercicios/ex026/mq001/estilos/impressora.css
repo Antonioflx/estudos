@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* Estilo para impressoras */
+
+* { 
+    margin: 10px;
+    padding: 10px;
+}
+
+/* CONFIGURACAO Geral */
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+/* CONFIGURACAO Header */
+
+menu {
+    display: none;
+}
+
+/* CONFIGURACAO Article */
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site # PS: Antonioflx :p';
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="esfut" value="fut"> <label for="esfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="esbas" value="bas"> <label for="esbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="esnat" value="nat"> <label for="esnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="esten" value="ten"> <label for="esten">Tênis</label> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Trabalho</legend>
+            <input type="radio" name="trabalho" id="est" checked value="est"> <label for="est">Estagiário</label> <br> 
+            <input type="radio" name="trabalho" id="devJ" value="devJ"> <label for="devJ">Desenvolvedor Júnior</label> <br>
+            <input type="radio" name="trabalho" id="devS" value="devS"> <label for="devS">Desenvolvedor Sênior</label> <br>
+            <input type="radio" name="trabalho" id="estudante" value="estudante"> <label for="estudante">Apenas estudo</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
