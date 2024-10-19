@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM (Somando)</title>
+    <style>
+        body{
+            font: normal 30px Arial, sans-serif;
+            background-color: rgb(190, 190, 190);
+        }
+        h1{
+            text-align: center;
+        }
+
+        input{
+            font: normal 20px Arial, sans-serif;
+            width: 200px;
+        }
+
+        div#res{
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Vamos somar números &#x1F601;</h1>
+    <input type="number" name="teste01" id="teste01"> +
+    <input type="number" name="teste02" id="teste02">
+    <input type="button" value="Somar" onclick="somar()" > 
+    <div id="res">Resultado...</div>
+
+    <script>
+
+        function somar(){
+        var t01 = window.document.getElementById('teste01')
+        var t02 = window.document.getElementById('teste02')
+        var res = window.document.getElementById('res')
+        var n1 = Number(t01.value)
+        var n2 = Number(t02.value)
+        var s = n1 + n2
+        res.innerHTML = `A soma entre o valor ${n1} e o número ${n2} é de: <strong>${s}</strong>`
+
+        }
+
+
+
+    </script>
+</body>
+</html>

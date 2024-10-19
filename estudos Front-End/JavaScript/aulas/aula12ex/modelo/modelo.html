@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <div> 
+            Ano de Nascimento: <input type="number" name="nasc" id="nasc"> 
+        </div>
+        
+       <div>
+            Sexo: <input type="radio" name="M" id="M" onclick="masc()"> Masculino <input type="radio" name="F" id="F" onclick="fem()"> Feminino
+       </div>
+
+        <div id="especial">
+            <input  type="button" value="Verificar" onclick="verificar()">
+        </div>
+
+       <p>Preencha os dados acima para ver o resultado!!</p>
+        
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com/antonio.felixx/" target="_blank" rel="external">@antonio.felixx</a>
+    </footer>
+    
+    <script src="js/javascript.js"></script>
+</body>
+</html>

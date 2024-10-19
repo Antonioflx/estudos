@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* configs media queries */
+
+/* 
+    Typical Device Breakpoints --> Pesquisar 
+    
+            Recomendações W3C (2024)
+    Extra Small Devices: (max-width: 600px)
+    Small Devices: (min-width: 600px)
+    Medium Devices: (min-width: 768px)
+    Large Devices: (min-width: 992px)
+    Extra Large Devices: (min-width: 1200px)
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* imagem */
+    section#imagem {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    
+        transform: translate(-140%, -50%);
+        height: 30vh;
+        width: 250px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        
+}   
+    /* conteudo */
+    section#form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-23%, -50%);
+        height: 30vh;
+        width: 440px;
+        border-bottom-left-radius: 0px;
+    }
+
+    /* form */
+
+    form h2 {
+        font-size: 20px;
+    }
+    form p {
+        font-size: 16px;
+    }
+
+    /* label */
+    form label {
+        width: 415px;
+    }
+
+    /* input */
+
+    form input {
+        width: 376px;
+    }
+
+    /* submit */
+
+    #submit input {
+        width: 420px;
+        margin-left: -1px;
+    }
+
+    /* link */
+
+    p#link {
+        width: 416px;
+        
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        width: 450px;
+    }
+
+    /* imagem */
+    section#imagem {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    
+        transform: translate(10%, -50%);
+        height: 360px;
+        border-radius: 0px 20px 20px 0px;
+        background-image: url(..//imagens/imagem.jpg);
+    }
+    
+    /* form conteudo */
+    section#form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-90%, -50%);
+        
+        height: 360px;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    form h2 {
+        padding-top: 15px;
+        text-align: center;
+        font-size: 1.7em;
+    }
+    
+    form p {
+        padding: 15px 10px 15px 10px;
+        font-size: 15px;
+    }
+
+    /* label */
+
+    form label {
+        width: 430px;
+        
+    }
+
+    /* input */
+
+    form input {
+        width: 390px;
+    }
+
+    /* submit */
+
+    #submit input {
+        width: 434px;
+        margin-left: -1px;
+        margin-top: -13px;
+    }
+
+
+    /* link */
+
+    p#link {
+        margin-top: -13px;
+        width: 432px;
+        height: 30px;
+    }
+
+}

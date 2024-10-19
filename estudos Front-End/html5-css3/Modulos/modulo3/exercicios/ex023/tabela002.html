@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        /* CONFIGS da Tabela. */
+        body { 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+
+        thead, tfoot {
+            background-color: gray;
+            color: rgba(255, 255, 255, 0.877);
+        }
+
+        /* 
+            Efeito Zebrado
+                odd = ímpar ou 2n-1
+                even = par ou 2n
+        */
+
+
+        tbody > tr:nth-child(odd) { 
+            background-color: wheat;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        /*
+            Grudar o cabeçalho enquanto desce a tabela.
+        */
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /* CONFIGS do td,th.*/
+
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.posicao{
+            text-align: center;
+        }
+
+        td.numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <!--
+        Anatomia para TABELAS GRANDES 
+            TABLE
+              CAPTION (Legenda da tabela)
+                THEAD (Cabeça)
+                  Pode ter -> tr, td, th
+                TBODY (Corpo)
+                  Pode ter -> tr, td, th 
+                TFOOT (Rodapé)
+                  Pode ter -> tr, td, th  
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 100px;">Posição</th>
+                    <th scope="col">Unidade Federativa</th>
+                    <th scope="col" style="width: 100px;">População (2024)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="posicao">1º</td>
+                    <td>São Paulo</td>
+                    <td class="numero">45 973 190</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">2º</td>
+                    <td>Minas Gerais</td>
+                    <td class="numero">21 322 692</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">3º</td>
+                    <td>Rio de Janeiro</td>
+                    <td class="numero">17 219 679</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">4º</td>
+                    <td>Bahia</td>
+                    <td class="numero">14 850 513</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">5º</td>
+                    <td>Paraná</td>
+                    <td class="numero">11 824 665</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">6º</td>
+                    <td>Rio Grande do Sul</td>
+                    <td class="numero">11 229 915</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">7º</td>
+                    <td>Pernambuco</td>
+                    <td class="numero">9 539 029</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">8º</td>
+                    <td>Ceará</td>
+                    <td class="numero">9 233 656</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">9º</td>
+                    <td>Pará</td>
+                    <td class="numero">8 664 306	</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">10º</td>
+                    <td>Santa Catarina</td>
+                    <td class="numero">8 058 447</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">11º</td>
+                    <td>Goiás</td>
+                    <td class="numero">7 350 483	</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">12º</td>
+                    <td>Maranhão</td>
+                    <td class="numero">7 010 960</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">13º</td>
+                    <td>Amazonas</td>
+                    <td class="numero">4 281 209</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">14º</td>
+                    <td>Paraíba</td>
+                    <td class="numero">4 145 040</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">15º</td>
+                    <td>Espírito Santo</td>
+                    <td class="numero">4 102 129</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">16º</td>
+                    <td>Mato Grosso</td>
+                    <td class="numero">3 836 399</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">17º</td>
+                    <td>Rio Grande do Norte</td>
+                    <td class="numero">3 446 071</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">18º</td>
+                    <td>Piauí</td>
+                    <td class="numero">3 375 646</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">19º</td>
+                    <td>Alagoas</td>
+                    <td class="numero">3 220 104	</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">20º</td>
+                    <td>Distrito Federal</td>
+                    <td class="numero">2 982 815</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">21º</td>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="numero">2 901 895</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">22º</td>
+                    <td>Sergipe</td>
+                    <td class="numero">2 291 077</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">23º</td>
+                    <td>Rondônia</td>
+                    <td class="numero">1 746 227</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">24º</td>
+                    <td>Tocantis</td>
+                    <td class="numero">1 577 342</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">25º</td>
+                    <td>Acre</td>
+                    <td class="numero">880 631</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">26º</td>
+                    <td>Amapá</td>
+                    <td class="numero">802 837</td>
+                </tr>
+
+                <tr>
+                    <td class="posicao">27º</td>           
+                    <td>Roraima</td>
+                    <td class="numero">716 793</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+
+                <tr>
+                    <th class="posicao">Nº </th>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="numero">212 583 750</td>
+                </tr>
+            </tfoot>
+    </table>
+</body>
+</html>

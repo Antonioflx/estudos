@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* 
+    Typical Device Breakpoints --> Pesquisar 
+    
+            Recomendações W3C (2024)
+    Extra Small Devices: (max-width: 600px)
+    Small Devices: (min-width: 600px)
+    Medium Devices: (min-width: 768px)
+    Large Devices: (min-width: 992px)
+    Extra Large Devices: (min-width: 1200px)
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
