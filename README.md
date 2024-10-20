@@ -38,13 +38,15 @@
    <li>SQL</li>
    <li>Python</li>
    <ul>
-      <p style="color: green">VariantesC</p>
+      <br>
+      <p><strong>VariantesC</strong></p>
       <li>Linguagem C (Estudando o avançado)</li>
       <li>Linguagem C++</li>
       <li>Lingaugem C#</li>
     </ul>
    <ul>
-      <p style="color: red">Frameworks:</p>
+     <br>
+      <p> <strong> Frameworks: </strong></p>
       <li>Vue.js</li>
       <li>Angular</li>
       <li>Entre outros.</li>
