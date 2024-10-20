@@ -33,23 +33,27 @@
 <h2> O que pretendo Estudar: </h2>
 <p> Após concluir algumas etapas, como avançar no PHP e aprender React </p>
 
+<h3> Linguagens </h3>
 <ul>
    <li>Java</li>
    <li>SQL</li>
    <li>Python</li>
-   <ul>
-      VariantensC:
+   <li>PHP8 mais avançado</li>
+   <li>SQL</li>
+   <li>VariantesC:</li>
+     <ol type="1">
       <li>Linguagem C (Estudando o avançado)</li>
       <li>Linguagem C++</li>
       <li>Lingaugem C#</li>
-    </ul>
-   <ul>
-      Frameworks:
-      <li>Vue.js</li>
-      <li>Angular</li>
-      <li>Entre outros.</li>
-   </ul>
-   <li>PHP8 mais avançado</li>
-   <br>
-   <p> Entre outras linguagens... </p>
+     </ol>
 </ul>
+
+<h3>Frameworks:</h3>
+ <ul>
+   <li>Vue.js</li>
+   <li>Angular</li>
+   <li>Entre outros.</li>
+  </ul>
+   <br>
+   
+   <p> Entre outras coisas... </p>
