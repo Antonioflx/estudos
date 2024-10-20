@@ -34,7 +34,7 @@
 <p> Após concluir algumas etapas, como avançar no PHP e aprender React </p>
 
 <h3> Linguagens </h3>
-<ul type="disc">
+<ul>
    <li>Java</li>
    <li>SQL</li>
    <li>Python</li>
