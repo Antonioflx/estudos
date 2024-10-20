@@ -33,7 +33,6 @@ int main() {
 	
 	printf("\nValores: [%d] , [%d] , [%d] |" , num1, num2, num3);
 	printf("\nMAIOR: %d", maiorNum(num1, num2, num3));
-	
-	// codigo
+
 	return 0;
 } 

@@ -32,6 +32,6 @@ int main() {
 	printf("\nValores: [%d] , [%d] |" , num1, num2);
 	printf("\nMENOR: %d", menorNum(num1, num2));
 	
-	// codigo
+
 	return 0;
 } 

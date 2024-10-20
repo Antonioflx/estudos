@@ -31,6 +31,6 @@ int main() {
 	
 	printf("\nValor de Delta: %d", deltValue(a,b,c));
 	
-	// codigo
+	
 	return 0;
 } 

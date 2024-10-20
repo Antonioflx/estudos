@@ -29,6 +29,6 @@ int main() {
 	
 	verifNum(num);
 	
-	// codigo
+	
 	return 0;
 } 

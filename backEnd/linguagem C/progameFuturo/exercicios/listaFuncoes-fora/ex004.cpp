@@ -63,17 +63,6 @@ void deltValue(int a, int b, int c) {
 		}
 		
 	}
-	
-//	if(a == 0) {
-//		printf("\nNão é possivel calcular o valor de Delta.");
-//	} else {
-//		int delta = b * b - 4 * a * c;
-//		
-//		if(delta >= 0) {
-//			printf("\nA primeira raiz: %d\n", raizX1(delta, a, b, c));
-//			printf("\nA segunda raiz: %d\n", raizX2(delta, a, b, c));
-//		}
-//	}
 }
 	
 	
@@ -95,7 +84,5 @@ int main() {
 	deltValue(a, b, c);
 	
 	
-	
-	// codigo
 	return 0;
 } 

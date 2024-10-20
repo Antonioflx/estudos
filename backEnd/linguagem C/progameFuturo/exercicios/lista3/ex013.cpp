@@ -9,7 +9,7 @@ int main () {
 	
 	// Variaveis
 	
-	int valor,cont, primo;
+	int valor,i, contador;
 	
 	
 	// Codigo
@@ -27,18 +27,19 @@ int main () {
 		
 	}	
 	
-	for (cont = 0; cont <= valor; cont++)
+	for (i = 1; i <= valor; i++)
 	{
-		primo = 
+		if(valor % i == 0)
+			contador++;
 	}
 	
-	if (valor % cont == 2)
+	if (contador < 2)
 		{
-			printf("O numero digitado: %d -> Nao e PRIMO", valor);
+			printf("O numero digitado: %d --> e PRIMO", valor);
 		} 
 		else 
 		{
-			printf("O numero digitado: %d --> e PRIMO", valor);
+			printf("O numero digitado: %d -> Nao e PRIMO", valor);
 		}
 	
 	//Fazer a condicao do n primo
