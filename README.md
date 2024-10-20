@@ -37,6 +37,7 @@
    <li>Java</li>
    <li>SQL</li>
    <li>Python</li>
+   <li>PHP8 mais avançado</li>
    <ul>
       <br>
       <p><strong>VariantesC</strong></p>
@@ -51,7 +52,6 @@
       <li>Angular</li>
       <li>Entre outros.</li>
    </ul>
-   <li>PHP8 mais avançado</li>
    <br>
    <p> Entre outras linguagens... </p>
 </ul>
