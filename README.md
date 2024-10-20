@@ -45,13 +45,15 @@
       <li>Linguagem C++</li>
       <li>Lingaugem C#</li>
     </ul>
-   <ul>
-     <br>
-      <p> <strong> Frameworks: </strong></p>
-      <li>Vue.js</li>
-      <li>Angular</li>
-      <li>Entre outros.</li>
-   </ul>
+   <li>
+      <ul>
+       <br>
+        <p> <strong> Frameworks: </strong></p>
+        <li>Vue.js</li>
+        <li>Angular</li>
+        <li>Entre outros.</li>
+      </ul>
+   </li>
    <br>
    <p> Entre outras linguagens... </p>
 </ul>
