@@ -6,7 +6,7 @@
 	Aula 153: Funções e procedimentos recursiva
 	Exemplo: imprimir todos os números de n até 0.
 	
-	Recursiva -> chamar uma função ou procedimento dentro dela mesmo.
+	Recursiva -> chamar uma função ou procedimento dentro dela mesmo. É tipo um loop.
 	
 	Recursão -> precisa ter um ponto de parada.
 */
@@ -17,24 +17,28 @@ void printNumbers(int num) {
 		int i;
 	
 		for (i = num; i >= 0; i--)
-		printf("Numero %d\n", i);
+			printf("Numero %d\n", i);
 	
 	*/
 	
 	// 2 forma:
 	
 	// Ordem decrescente
-//	if(num == 0)
+//	if(num > 0) {
 //		printf("Num %d\n", num);
-//	else {
+//		printNumbers(num - 1);
+//	} else
 //		printf("Num %d\n", num);
-//		printNumbers(num - 1); // n da para usar num--; -> entra em loop
-//	}
+	
 	
 	// Ordem crescente
-	if(num == 0)
+	if(num > 0) {
+		printNumbers(num - 1); 
 		printf("Num %d\n", num);
-	else {
+	}
+	else 
+		printf("Num %d\n", num);
+		
 		/* 
 			Por que isso deu certo? 
 			Atraves da recursividade, o compilador armazena os valores em uma pilha
@@ -44,9 +48,7 @@ void printNumbers(int num) {
 			fará o printf, assim sucessivamente.
 		*/
 		
-		printNumbers(num - 1); 
-		printf("Num %d\n", num);
-	}
+	
 	
 }
 
@@ -61,6 +63,6 @@ int main() {
 
 	printNumbers(n);
 	
-	// codigo
+	
 	return 0;
 } 
