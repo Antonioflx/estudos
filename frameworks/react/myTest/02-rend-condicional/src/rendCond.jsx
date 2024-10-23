@@ -23,6 +23,7 @@ function AdminPanel () {
     )
 }
 
+/* O que quero fazer. Quando o usuario enviar -> utilizar preventDefault() se conseguir e tornar o valor de isLoggedIn para true.*/
 
 // tela de login para o usuario entrar.
 function LoginForm() {
