@@ -34,7 +34,7 @@
       <li>Funções(Parametros, Argumentos) </li>
       <li>Escopo global, escopo local, etc.</li>
       <li>Funções Declarativas, Expressivas</li>
-      <li>Arrow Fuctions</li>
+      <li>Arrow Functions</li>
       <li>IIFE</li>
       <li>Execution Context</li>
    </ul>
