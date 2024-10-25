@@ -1,4 +1,4 @@
-# Linguagem de Progamação JavaScript + Linguagem de Marcação HTML5 e CSS3.
+# Linguagem de Marcação HTML5 e CSS3 + Linguagem de Progamação JavaScript.
 
    <h2>Créditos aos Professor Gustavo Guanabara do canal Curso em Video </h2>
 
