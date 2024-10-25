@@ -9,7 +9,7 @@
             <li> <a href="https://www.youtube.com/watch?v=0ik6X4DJKCc&ab_channel=TraversyMedia"  >Part 1 - DOM</a> </li>
             <li> <a href="https://www.youtube.com/watch?v=mPd2aJXCZ2g&ab_channel=TraversyMedia"  >Part 2 - DOM</a> </li>
             <li> <a href="https://www.youtube.com/watch?v=wK2cBMcDTss&t=1s&ab_channel=TraversyMedia"  >Part 3 - DOM</a> </li>
-            <li> <a href="https://www.youtube.com/watch?v=i37KVt_IcXw&ab_channel=TraversyMedia"  >Part 1 - DOM</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=i37KVt_IcXw&ab_channel=TraversyMedia"  >Part 4 - DOM</a> </li>
          </ul>
       </li>
       <li><a href= "https://www.youtube.com/watch?v=hdI2bqOjy3c&t=3s&ab_channel=TraversyMedia"  > Link da pasta de JS (1h:40m)</a></li>
@@ -34,7 +34,7 @@
       <li>Funções(Parametros, Argumentos) </li>
       <li>Escopo global, escopo local, etc.</li>
       <li>Funções Declarativas, Expressivas</li>
-      <li>Arrow Fuctions</li>
+      <li>Arrow Functions</li>
       <li>IIFE</li>
       <li>Execution Context</li>
    </ul>
