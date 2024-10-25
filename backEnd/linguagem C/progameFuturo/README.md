@@ -19,7 +19,7 @@
    <ul> 
       <li>Funcões e Procedimentos </li>
       <li>Funções e Procedimentos Recursivas</li>
-      <li>Typeof Struct</li>
+      <li>Typedef Struct</li>
    </ul>
 </ol>
  
