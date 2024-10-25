@@ -6,14 +6,14 @@
       <li>
          Links da pasta HTML5 e CSS3
          <ul>
-            <li> <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&ab_channel=CursoemV%C3%ADdeo" target = "_blank" >Modulo 1 - HTML5 e CSS3</a> </li>
-            <li> <a href="https://www.youtube.com/watch?v=vPNIAJ9B4hg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&ab_channel=CursoemV%C3%ADdeo" target = "_blank" >Modulo 2 - HTML5 e CSS3</a> </li>
-            <li> <a href="https://www.youtube.com/watch?v=ofFgnDtn_1c&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ&ab_channel=CursoemV%C3%ADdeo" target = "_blank" >Modulo 3  - HTML5 e CSS3</a> </li>
-            <li> <a href="https://www.youtube.com/watch?v=zHKHMmEG9vE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&ab_channel=CursoemV%C3%ADdeo" target = "_blank" >Modulo 4 - HTML5 e CSS3</a> </li>
-            <li> <a href="https://www.youtube.com/watch?v=rqvn_c2n9Eg&list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d&ab_channel=CursoemV%C3%ADdeo" target = "_blank" >Modulo 5 - HTML5 e CSS3</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&ab_channel=CursoemV%C3%ADdeo" >Modulo 1 - HTML5 e CSS3</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=vPNIAJ9B4hg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&ab_channel=CursoemV%C3%ADdeo" >Modulo 2 - HTML5 e CSS3</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=ofFgnDtn_1c&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ&ab_channel=CursoemV%C3%ADdeo" >Modulo 3  - HTML5 e CSS3</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=zHKHMmEG9vE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&ab_channel=CursoemV%C3%ADdeo" >Modulo 4 - HTML5 e CSS3</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=rqvn_c2n9Eg&list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d&ab_channel=CursoemV%C3%ADdeo" >Modulo 5 - HTML5 e CSS3</a> </li>
          </ul>
       </li>
-      <li><a href= "https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&ab_channel=CursoemV%C3%ADdeo" target = "_blank" > Link da pasta de JavaSript </a></li>
+      <li><a href= "https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&ab_channel=CursoemV%C3%ADdeo" > Link da pasta de JavaSript </a></li>
    </ol>
 
    <div>
