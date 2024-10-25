@@ -1,8 +1,7 @@
 
 
-
 // tela de login para o usuario entrar.
-function LoginForm({ setIsLoggedIn , setUserName, setAge}) {
+function LoginForm({ setIsLoggedIn , setUserName, setAge }) {
     /* 
     Consegui submitar. -> Passei [setIsLoggedIn={setIsLoggedIn}] (no APP.jsx), veio até aqui como propriedade dentro do objeto prop, e alterou o falor para true quando eu submito.
     

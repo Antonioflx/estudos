@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Counter() {
     // criar var para nome
-    const [name, setName] = useState('Taylor');
+    const [name, setName] = useState('Antonio Felix');
 
     // criar var para idade
     const [age, setAge] = useState(42);
