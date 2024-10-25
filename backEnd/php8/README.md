@@ -1,7 +1,7 @@
 # Linguagem PHP8
 
    <h2>Créditos aos Professor Gustavo Guanabara do canal Curso em Video </h2>
-      <a href= "https://www.youtube.com/watch?v=TfsO0BGvGn0&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&ab_channel=CursoemV%C3%ADdeo" style = "color: red "> Link da playlist de PHP8 </a>
+      <a href= "https://www.youtube.com/watch?v=TfsO0BGvGn0&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&ab_channel=CursoemV%C3%ADdeo"> Link da playlist de PHP8 </a>
 
 
  <h2>Tudo que estudei.</h2>
