@@ -1,7 +1,7 @@
 # Exercitando a Lógica de Progamação
 
    <h2>Grandee Beecrowd </h2>
-      <a href= "https://judge.beecrowd.com/pt/login" target = "_blank" > Beecrowd </a>
+      <a href= "https://judge.beecrowd.com/pt/login" > Beecrowd </a>
 
 
  <h2>Tudo que Fiz.</h2>
