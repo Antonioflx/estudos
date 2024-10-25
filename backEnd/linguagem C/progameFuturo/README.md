@@ -14,8 +14,8 @@
       <li>Estrutura de Repetição </li>
       <li>Vetores / Matrizes</li>
    </ul>
-   <li> <strong>Intermediário </strong> </li>
    <br>
+   <li> <strong>Intermediário </strong> </li>
    <ul> 
       <li>Funcões e Procedimentos </li>
       <li>Funções e Procedimentos Recursivas</li>
