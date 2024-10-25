@@ -23,7 +23,7 @@
    <br>
  <h2>Tudo que estudei em HTML5 e CSS3.</h2>
    <p>Eu aprendi bastante HTML5 e CSS3, mas acho que não precisa ser listado aqui, visto que não tem segredo.</p>
-   <p>Aprendi sobre praticamente todas as tags. Css, ainda tenho que aprender mais coisas, mas aprendi bastante também</p>
+   <p>Aprendi sobre praticamente todas as tags. CSS, ainda tenho que aprender mais coisas, mas aprendi bastante também</p>
 
 
 <h2>Tudo que estudei em JavaScript. </h2>
