@@ -6,7 +6,7 @@
 
 <h2>Créditos ao site do React Dev </h2>
    <strong> <p>Pasta myStudy </p> </strong>
-   <a href= "https://pt-br.react.dev/learn"> Link do Início </a>
+   <a href= "https://pt-br.react.dev/learn"> Link do Início do aprendizado</a>
 
 <h2>Tudo que estudei.</h2>
 
