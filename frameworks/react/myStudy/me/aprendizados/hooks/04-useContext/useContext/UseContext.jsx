@@ -1,4 +1,4 @@
-// useContexté um React Hook que permite que você leia e assine o contexto do seu componente.
+// useContext é um React Hook que permite que você leia e assine o contexto do seu componente.
 
 // É bom utilizar quando temos propriedades em comum, evitando a necessidade de utilizar várias e várias props
 
@@ -47,5 +47,7 @@ function Button({ children }) {
 	const theme = useContext(ThemeContext);
 	const backColor = theme;
 
-	return <button style={{ backgroundColor: backColor }}>{children}</button>;
+	return (
+		<button style={{ backgroundColor: backColor }}>{children}</button>
+	);
 }
