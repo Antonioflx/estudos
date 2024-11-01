@@ -13,10 +13,16 @@
 <ol type ="1"> 
    <li> <strong>Básico</strong></li>
    <ul> 
-      <li>Como manipular váriaveis </li>
-      <li>State </li>
-      <li>Renderização </li>
+      <li>Props </li>
       <li>Componentes </li>
+      <ul>
+         Hooks
+         <li>useState</li>
+         <li>useCallback</li>
+         <li>useRef</li>
+         <li>useContext</li>
+      </ul>
+      <li>Renderização </li>
    </ul>
    <br>
 </ol>
