@@ -16,7 +16,7 @@
       <li>Props </li>
       <li>Componentes </li>
       
-      <ul type="disc">
+      <ul>
          <li> <strong> Hooks </strong> </li>
          <li>useState</li>
          <li>useCallback</li>
