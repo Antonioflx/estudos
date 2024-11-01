@@ -11,6 +11,12 @@
 <h2>Tudo que estudei.</h2>
 
 <ol type ="1"> 
+   <li> <strong> Conceitos </strong></li>
+      <ul>
+         <li>Renderização</li>
+         <li>Imutibilidade</li>
+      </ul>
+   <br>
    <li> <strong>Básico</strong></li>
    <ul> 
       <li>Props </li>
@@ -24,6 +30,5 @@
          <li>useRef</li>
          <li>useContext</li>
       </ul>
-      <li>Renderização </li>
    </ul>
 </ol>
