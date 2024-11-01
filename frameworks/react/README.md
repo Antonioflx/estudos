@@ -15,9 +15,10 @@
    <ul> 
       <li>Props </li>
       <li>Componentes </li>
-      
+   </ul>
+   <br>
+   <li> <strong>Hooks</strong></li>
       <ul>
-         <li> <strong> Hooks </strong> </li>
          <li>useState</li>
          <li>useCallback</li>
          <li>useRef</li>
@@ -25,5 +26,4 @@
       </ul>
       <li>Renderização </li>
    </ul>
-   <br>
 </ol>
