@@ -66,3 +66,5 @@
 // Evitar a mutação direta de dados permite que você mantenha versões prévias dos dados intactas e as reutilize mais tarde.
 
 // Imutabilidade torna muito barato para os componentes compararem se seus dados foram alterados ou não.
+
+// useContext

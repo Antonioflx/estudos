@@ -1,0 +1,11 @@
+// Verificar se o tempo gasto em um pedaço de código
+
+/*
+  Tenha em mente que sua máquina provavelmente é mais rápida que a dos seus usuários, 
+  então é uma boa ideia testar o desempenho com uma desaceleração artificial. 
+  Por exemplo, o Chrome oferece uma opção de CPU Throttling para isso.
+*/
+
+console.time('filter array');
+const visibleTodos = filterTodos(todos, tab);
+console.timeEnd('filter array');
