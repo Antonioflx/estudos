@@ -34,4 +34,7 @@ Ou seja o React, comparará o valor antigo com o valor novo.
 // Ps: Como useCallback está relacionado a useMemo?
 // Ver essa parte Quando ver o useMemo https://pt-br.react.dev/reference/react/useCallback
 
+// Criar hooks https://pt-br.react.dev/learn/reusing-logic-with-custom-hooks
+
+// Se você estiver escrevendo um Hook personalizado, é recomendável encapsular quaisquer funções que ele retorna em useCallback:
 import { useCallback } from "react";

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import CatFriends from "../../aprendizados/hooks/05-useRef/useRef5";
 
 /*  Estudos */
 
@@ -18,7 +19,12 @@ import "./App.css";
 // Memo
 // import ShowMemo from "../../aprendizados/hooks/02-useMemo/Memo";
 // import ShowMemo2 from "../../aprendizados/hooks/02-useMemo/Memo2";
-import ShowMemo3AndContext from "../../aprendizados/hooks/02-useMemo//memo/Memo3";
+// import ShowMemo3AndContext from "../../aprendizados/hooks/02-useMemo//memo/Memo3";
+// import ShowRef from "../../aprendizados/hooks/05-useRef/useRef";
+// import ShowRef2 from "../../aprendizados/hooks/05-useRef/useRef2";
+// import ShowRef3 from "../../aprendizados/hooks/05-useRef/useRef3";
+// import ShowRef3_2 from "../../aprendizados/hooks/05-useRef/useRef3.2";
+// import ShowRef4 from "../../aprendizados/hooks/05-useRef/useRef4";
 
 function App() {
 	return (
@@ -29,9 +35,17 @@ function App() {
 			{/* Estudo 4 <ShowCondicional /> */}
 			{/* Estudo Hooks 2 <ShowMemo /> */}
 			{/* Estudo Hooks 2.1 <ShowMemo2 /> */}
-			<ShowMemo3AndContext />
+			{/* Estudo Hooks 2.2 <ShowMemo3AndContext /> */}
 			{/* Estudo Hooks 4 <Context /> */}
 			{/* Estudo Hooks 4.1 <Context2 /> */}
+
+			{/* Estudo Hooks <ShowRef /> */}
+			{/* Estudo Hooks <ShowRef2 /> */}
+			{/* <ShowRef3 /> */}
+			{/* <ShowRef3_2 /> */}
+			{/* <ShowRef4 /> */}
+
+			<CatFriends />
 		</>
 	);
 }
