@@ -9,7 +9,7 @@
    <a href= "https://pt-br.react.dev/learn"> Link do Início do aprendizado</a>
 
 <h2> Créditos ao Canal Sangam Mukherjee </h2>
-<strong> <p> Pasta Sangam </p></strong>
+<strong> <p> Pasta Sangam-Mukherjee </p></strong>
 <a href= "https://www.youtube.com/watch?v=dz458ZkBMak&list=PLLX7icjg1mSRCPo9dwp0Vi_BxO-D2F6KJ&ab_channel=SangamMukherjee">Link do vídeo sobre React</a>
 
 <h2>Tudo que estudei.</h2>
