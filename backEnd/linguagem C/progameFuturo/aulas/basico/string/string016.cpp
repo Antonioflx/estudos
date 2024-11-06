@@ -3,50 +3,63 @@
 #include <string.h>
 
 /*
-		Aula 144: Leia uma frase e diga se ela é palíndroma.
-		roma me tem amor
-		a grama é amarga
-		anotaram a data da maratona
-		a mãe te ama
-		a torre da derrota
-		a sacada da casa
-		luz azul
+		Aula 143: Leia uma palavra e diga se ela é palíndroma.
+		ama
+		arara
+		asa
+		osso
+		radar
+		reviver
+		socos
 */
-
-// O que eu pensei, eliminar todos os "", meio que juntar. Utilizei a forma strtok(para substituir " " por NULL)
 
 int main() {
 	// Definindo a lingua
 	setlocale(0, "Portuguese");
 	
-	int tam, i, j = 0, iguais = 0, diferente = 0;
-	char palavra[50], copia[50];
+	int tam, i, iguais = 0, diferente = 0;
+	char palavra[30], copia[30];
 	
-	printf("\nDigite uma frase: ");
-	scanf("%50[^\n]", palavra);
+	printf("\nDigite uma palavra: ");
+	scanf("%s", palavra);
 	
-	// remover => ?! ,;.
+	/* SOLUÇÃO 1:
+		tam = strlen(palavra);
+		for(i = 0; i <= strlen(palavra); i++) {
+			copia[i] = palavra[tam - 1];
+			tam--;
+		}
+		tam = strlen(palavra);
+		
+		for(i = 0; i < tam; i++){
+			if(palavra[i] == copia[i])
+				iguais++;
+		}
+		
+		printf("\nORIGINAL: %s\nCOPIA: %s", palavra, copia);
+		
+		if(tam == iguais)
+			printf("\nÉ palíndroma...\n");
+		else
+			printf("\nNão é palíndroma...\n");
+	*/
 	
-	for(i = 0; i < strlen(palavra); i++){
-		if(palavra[i] != '!' && palavra[i] != '?' && palavra[i] != ' ' && palavra[i] != '.')
-			copia[j++] = palavra[i];
-	}
+	// Solução 2.
 	
-	copia[j] = '\0';
+	tam = strlen(palavra) - 1; 
 	
-	printf("Original: %s\nCopia: %s\n", palavra, copia);
+	i = 0; 
 	
-	tam = strlen(copia) - 1;
-	for(i = 0; i < strlen(copia); i++){
-		if(copia[i] != copia[tam]) 
+	while (tam >= i) { 
+		if(palavra[i] != palavra[tam])
 			diferente++;
+		i++;
 		tam--;
 	}
-	
+		
 	if(diferente != 0)
 		printf("\nNão é palíndroma...\n");
 	else
 		printf("\nÉ palíndroma...\n");
-		
 	return 0;
 } 

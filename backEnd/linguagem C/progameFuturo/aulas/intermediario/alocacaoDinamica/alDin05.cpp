@@ -5,23 +5,9 @@
 #include <time.h>
 
 /*
-				Aula 199: Como alocar um vetor dinâmico?
+		Aula 201: Como liberar memória alocada dinamicamente com a função free
+					
 			
-			
-				Alocação Dinâmica:
-			
-			Declarando variáveis dinâmicas:
-		
-				O recurso de memória será utilizado 
-				quando meu progama estiver em  execução.
-		
-				Essas variáveis ficam em regiões separadas da memória:
-				
-				A região de memória que fica as variáveis dinâmicas é
-				bem maior do que a região de memória para as variáveis estáticas:
-				
-				Isso acontece, 
-				porque a maior parte da memória é gerenciada durante o uso da progamação:		
 */
 
 int main() {
@@ -52,9 +38,24 @@ int main() {
 			*(vet + i) = rand() % 10;
 		
 		for(i = 0; i < tam; i++) 
-			printf("%d Elemento: %d\n", i + 1, *(vet+ 1));
+			printf("%d Elemento: %d\n", i + 1, *(vet + i));
 		
-	
+		printf("\nDigite o novo tamanho do vetor: ");
+		scanf("%d", &tam);
+		
+		/*
+			O realloc -> ele realoca uma nova região de memória, 
+			copiar tudo que está no vetor para uma nova região 
+			de memória -> trabalhar com o vetor alterado.
+		*/
+		vet = (int*)realloc(vet, tam * sizeof(int));
+		
+		printf("\nVetor realocado:\n");
+			
+		for(i = 0; i < tam; i++) 
+			printf("%d Elemento: %d\n", i + 1, *(vet + i));
+			
+		free(vet); // Não precisa mais de memória. Liberar memória.f
 	}
 	else 
 		printf("\n[ERRO]");
