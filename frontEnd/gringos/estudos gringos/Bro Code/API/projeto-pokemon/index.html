@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pikachu</title>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+
+			body {
+				padding: 10px;
+				background-color: rgb(233, 233, 233);
+				text-align: center;
+			}
+
+			input {
+				width: 100px;
+				margin-top: 10px;
+			}
+
+			img {
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<label for="inp-name">Digite um nome de um pikachu</label>
+			<br />
+
+			<input
+				type="text"
+				name="inp-name"
+				id="inp-name"
+				placeholder="..."
+			/>
+			<button id="btn-fetch">Fetch Pokemon</button>
+			<img
+				src=""
+				alt="Pokemnos Sprite"
+				id="pokemonSprite"
+				style="display: none"
+			/>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
