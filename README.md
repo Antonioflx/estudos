@@ -39,7 +39,7 @@
    <li>SQL</li>
    <li>Python</li>
    <li>PHP8 mais avançado</li>
-   <li>SQL</li>
+   <li>Oracle</li>
    <li>VariantesC:</li>
      <ol type="1">
       <li>Linguagem C (Estudando o avançado)</li>
