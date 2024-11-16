@@ -1,21 +1,20 @@
-
-const btnClick = document.querySelector('#button');
+const btnClick = document.querySelector("#button");
 const itemInput = document.querySelector('input[type="text"]');
-const form = document.querySelector('form');
-const output = document.querySelector('#output');
-const select = document.querySelector('select');
+const form = document.querySelector("form");
+const output = document.querySelector("#output");
+const select = document.querySelector("select");
 // evt -> evento
 
 // PS: tem Exemplos no curso gringo de JS2 -> 07-events/02-mouse-events/shopping-list/script
-const clickButton = evt => {
-    // console.log(evt.target);
-    // console.log(evt.target.id); // id
-    // console.log(evt.target.className); // class
-    // console.log(evt.target.classList); // todas as classes.
-    
-    let output = evy.type;
-    console.log(output);
-}
+const clickButton = (evt) => {
+	// console.log(evt.target);
+	// console.log(evt.target.id); // id
+	// console.log(evt.target.className); // class
+	// console.log(evt.target.classList); // todas as classes.
+
+	let output = evy.type;
+	console.log(output);
+};
 
 /*
         Mouse events
@@ -51,25 +50,23 @@ const clickButton = evt => {
     9) submite -> quando envia.
 */
 
-// itemInput.addEventListener('focus', runEvent);
+// itemInput.addEventListener("focus", runEvent);
 // itemInput.addEventListener('blur', runEvent);
 
 // itemInput.addEventListener('cut', runEvent);
 // itemInput.addEventListener('paste', runEvent);
 
-
 // itemInput.addEventListener('input', runEvent);
 // select.addEventListener('change', runEvent);
-form.addEventListener('submit', runEvent);
-
+form.addEventListener("submit", runEvent);
 
 function runEvent(evt) {
-    evt.preventDefault();
-    console.log(`EVENT TYPE: ${evt.type}`);
+	evt.preventDefault();
+	console.log(`EVENT TYPE: ${evt.type}`);
 
-   document.getElementById('output').innerHTML = `<h3> ${evt.target.value} </h3>`
+	document.getElementById(
+		"output"
+	).innerHTML = `<h3> ${evt.target.value} </h3>`;
 
-    // ul.insertAdjacentElement('afterend', element);
-
-
+	// ul.insertAdjacentElement('afterend', element);
 }
