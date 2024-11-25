@@ -1,5 +1,5 @@
 <h2>Projeto jogo da velha 3x3.</h2>
-<p>Tentamos desenvolver o jogo da velha 3x3 mais completo possível na linguagem C para a cadeira <strong>Técnicas e Desenvolvimento de Algoritmo </strong> </p>
+<p>Tentamos desenvolver o jogo da velha 3x3 mais completo possível na linguagem C para a cadeira <strong>Técnicas e Desenvolvimento de Algoritmo </strong> </p>.
 <p>*Discente: <strong> Walace Sartori Bonfim </strong></p>
 <p>*Universidade: <strong> UNIPÊ </strong> </p>
 
