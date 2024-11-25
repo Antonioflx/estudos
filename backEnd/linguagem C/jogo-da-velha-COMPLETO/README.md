@@ -31,7 +31,7 @@
 </ol>
 
 <p>
-   Utilizamos a estrutura de arquivo da linguagem C para criar o ranking. Caso o usuário jogue, irá ser criado o bloco de notas </strong> ranking.txt</strong> que irá armazenar os pontos de cada player. Máximo 30 player no ranking. E tem como máximo 50 jogadores.
+   Utilizamos a estrutura de arquivo da linguagem C para criar o ranking. Caso o usuário jogue, irá ser criado o bloco de notas </strong> ranking.txt</strong> que irá armazenar os pontos de cada player. Máximo 30 player no ranking. E o código em si tem como máximo 50 jogadores feita pela alocação dinâmica.
 </p>
 <p>
    *Observação: Talvez, em outros SOs, por exemplo Linux não fique tão legal assim, visto que algumas funções, como system("cls") que funciona apenas no SO Windows. 
