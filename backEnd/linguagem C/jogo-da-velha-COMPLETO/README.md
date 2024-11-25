@@ -1,9 +1,8 @@
 <h2>Projeto jogo da velha 3x3.</h2>
 <p>Tentamos desenvolver o jogo da velha 3x3 mais completo possível na linguagem C para a cadeira <strong>Técnicas e Desenvolvimento de Algoritmo </strong> </p>
-<p>Discente: <strong> Walace Sartori Bonfim </strong></p>
-<p>Universidade: <strong> UNIPÊ </strong> </p>
-<br>
-<p>Observação: Talvez, em outros SOs, por exemplo Linux não fique tão legal assim, visto que algumas funções, como system("cls") funciona no SO Windows. </p>
+<p>*Discente: <strong> Walace Sartori Bonfim </strong></p>
+<p>*Universidade: <strong> UNIPÊ </strong> </p>
+<p>*Observação: Talvez, em outros SOs, por exemplo Linux não fique tão legal assim, visto que algumas funções, como system("cls") funciona no SO Windows. </p>
 
 <h3>EQUIPE:</h3>
 <ol>
