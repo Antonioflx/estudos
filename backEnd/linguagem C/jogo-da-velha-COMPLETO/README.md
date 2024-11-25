@@ -1,5 +1,5 @@
 <h2>Projeto jogo da velha 3x3.</h2>
-<p>Tentamos desenvolver o jogo da velha 3x3 mais completo possível na linguagem C para a cadeira <strong>Técnicas e Desenvolvimento de Algoritmo </strong> </p>
+<p>Tentamos desenvolver o jogo da velha 3x3 mais completo possível na linguagem C para a cadeira <strong>Técnicas e Desenvolvimento de Algoritmo </strong>. </p>
 <p>*Discente: <strong> Walace Sartori Bonfim </strong></p>
 <p>*Universidade: <strong> UNIPÊ </strong> </p>
 
@@ -31,7 +31,7 @@
 </ol>
 
 <p>
-   Utilizamos a estrutura de arquivo da linguagem C para criar o ranking. Caso o usuário jogue, irá ser criado o bloco de notas </strong> ranking.txt</strong> que irá armazenar os pontos de cada player. Máximo 30 player no ranking. E tem como máximo 50 jogadores.
+   Utilizamos a estrutura de arquivo da linguagem C para criar o ranking. Caso o usuário jogue, irá ser criado o bloco de notas </strong> ranking.txt</strong> que irá armazenar os pontos de cada player. Máximo 30 player no ranking. E o código em si tem como máximo 50 jogadores feita pela alocação dinâmica.
 </p>
 <p>
    *Observação: Talvez, em outros SOs, por exemplo Linux não fique tão legal assim, visto que algumas funções, como system("cls") que funciona apenas no SO Windows. 
