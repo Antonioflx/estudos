@@ -35,7 +35,7 @@ int validarCoord(int pos); // validar a posição
 void tutorialGanhar(); // tutorial de como ganhar ou empate
 
 void jogar(); // gameplay oficial.
-int jogarNovamente(char *usuario1, char *usuario2); // verificar se os jogadores querem jogar de novo
+int jogarNovamente(char *usuario1, char *usuario2, int *jogador); // verificar se os jogadores querem jogar de novo
 int quantVazias(); // função para verificar a quantidade de casas vazias.
 
 void tempoDeJogo(time_t end, time_t start); // procedimento para calcular e mostrar o tempo de jogo
@@ -118,7 +118,7 @@ int main() {
 void menu() {
 //	system("cls");
 	
-	printf("\n ----------- [ M E N U ] ----------\n");
+	printf("\n ------- [ JOGO DA VELHA ] --------\n");
 	printf("|\t\t\t\t   |\n");
 	printf("|  [1] -> Tutorial\t\t   |\n|  [2] -> Jogar\t\t\t   |\n|  [3] -> Mostrar o ranking\t   |\n|  [4] -> Créditos\t\t   |\n|  [5] -> Sair\t\t\t   |");
 	printf("\n|\t\t\t\t   |");
@@ -138,7 +138,7 @@ void selecionarOpcaoMenu() {
 	while(opcao < 1 || opcao > 5) {
 		system("cls");
 		printf("\n\t[ERROR] -> Valor inválido!\n");
-		printf("\n------------ [ M E N U ] -----------\n");
+		printf("\n ------- [ JOGO DA VELHA ] --------\n");
 		printf("|\t\t\t\t   |\n");
 		printf("|  [1] -> Tutorial\t\t   |\n|  [2] -> Jogar\t\t\t   |\n|  [3] -> Mostrar o ranking\t   |\n|  [4] -> Créditos\t\t   |\n|  [5] -> Sair\t\t\t   |");
 		printf("\n|\t\t\t\t   |");
@@ -200,7 +200,7 @@ void tutorial() {
 		// menu do tutorial
 		printf("\n\t[TUTORIAL]\n");
 		printf("\nREGRAS:\n");
-		printf("[1.] -> O primeiro jogador começa com a letra 'X'.\n[2.] -> O segundo jogador joga com a letra 'O'.\n[3.] -> Caso coloque um quadrado que já está preenchida, irá dar [ERRO]. ");
+		printf("[1.] -> O primeiro jogador começa com a letra 'X'.\n[2.] -> O segundo jogador joga com a letra 'O'.\n[3.] -> Caso selecione um bloco que já foi selecionado ou inválido, irá dar [ERRO]. ");
 		printf("\n-------------------------------------------------\n");
 		imprimirPosicoes();
 		
@@ -211,7 +211,7 @@ void tutorial() {
 			jogador++;
 		} 
 		else {
-			printf("\nJogador 2 = '0'");
+			printf("\nJogador 2 = 'O'");
 			lerCoord(jogador2);
 			jogador = 1;
 			imprimir();
@@ -333,7 +333,7 @@ void lerCoord(char j) {
 		/ -> retorna o quociente.
 		% -> retorna o resto.
 		1 colchete -> 1/3 = 0;
-		2 colchete -> Resto = Dividendo - (Quociente x Divisor) -> R = 1 - (0 x 3) -> R = 1'
+		2 colchete -> Resto = Dividendo - (Quociente x Divisor) -> R = 1 - (0 x 3) -> R = 1
 		jogo[0][1] -> linha 0, coluna 1.
 	*/
 	jogo[(posicao - 1)/3][(posicao - 1) % 3] = j;
@@ -362,7 +362,7 @@ void tutorialGanhar() {
 	// menu para o usuario escolher
 	printf("\n\t[TUTORIAL]\n");
 	printf("\nComo ganhar ou empatar? -> Existem 3 formas de ganhar uma partida:\n");
-	printf("[1.] -> Completar a linha com o mesmo caractere.\n[2.] -> Completar a coluna com o mesmo caractere.\n[3.] -> Completar a diagonal com o mesmo caractere.\n[4.] -> Se todas as casas estiverem preenchidas e nenhum dos jogadores ganharem é *empate*.");
+	printf("[1.] -> Completar uma coluna com o mesmo caractere.\n[2.] -> Completar uma linha com o mesmo caractere.\n[3.] -> Completar uma diagonal com o mesmo caractere.\n[4.] -> Se todas as casas estiverem preenchidas e nenhum dos jogadores ganharem é EMPATE.");
 	printf("\n--------------------------------------------------------------------------------------------\n");
 	printf("\n\nVeja na prática:\nDigite um número [1, 2, 3, 4]: ");
 	scanf("%d", &opcao);
@@ -514,7 +514,7 @@ void jogar() {
 		fim = time(NULL); // recebendo hora final do jogo
 		tempoDeJogo(fim, inicio); // chamando procedimento de calcular o tempo de jogo
 		salvarRanking(user, qtdJogadores);	// salvar os dados.
-	}while(jogarNovamente(nomeUser1, nomeUser2)); // verificar se os jogadores querem jogar novamente
+	}while(jogarNovamente(nomeUser1, nomeUser2, &jogador)); // verificar se os jogadores querem jogar novamente
 	
 	// liberando memória	
 	free(user);
@@ -525,7 +525,7 @@ void jogar() {
 }
 
 // função que pergunta se os jogadores querem jogar novamente ---> Retorna 1 para sim e 0 para não
-int jogarNovamente(char *usuario1, char *usuario2){
+int jogarNovamente(char *usuario1, char *usuario2, int *jogador){
 	
 	int opc;
 	printf("\nEscolha novamente.\n\n[1.] -> Jogar Novamente\n[2.] -> Jogar com usuários diferentes\n[3.] -> Voltar ao Menu\n\nINFORME: ");
@@ -551,6 +551,7 @@ int jogarNovamente(char *usuario1, char *usuario2){
 		// caso ele queira jogadores diferentes, só alterar o nome.
 		// quando ele for jogar com nomes diferentes 
 		// pedir para alterar os dados. e retornar
+			*jogador = 1;
 			pedirDados(usuario1, usuario2); 
 			return 1;
 			break;
@@ -1082,7 +1083,7 @@ void imprimirCreditos() {
 		
 	printf("\n\t -------------[E Q U I P E]---------------\n");
 	printf("\t|\t\t\t\t\t  |\n");
-	printf("\t| [1.] -> Antonio Felix de Oliveira Neto  |\n\t| [2.] -> Dante Alves e Silva\t\t  |\n\t| [3.] -> Guilherme de Medeiros Serpa\t  |\n\t| [4.] -> Iloir Martins de Souza Neto\t  |\n\t| [5.] -> João Nicéforo Cantalice Neto\t  |\n");
+	printf("\t| [1.] -> Antonio Felix de Oliveira Neto  |\n\t| [2.] -> Dante Alves e Silva\t\t  |\n\t| [3.] -> Iloir Martins de Souza Neto\t  |\n\t| [4.] -> João Nicéforo Cantalice Neto\t  |\n");
 	printf("\t|\t\t\t\t\t  |\n\t -----------------------------------------\n");
 	
 	printf("\n\t --------[R E F E R Ê N C I A S]----------\n");
@@ -1091,7 +1092,7 @@ void imprimirCreditos() {
 	printf("\t|\t\t\t\t\t  |");
 	printf("\n\t -----------------------------------------\n");
 	
-	printf("Pressione ENTER para voltar ao menu... ");
+	printf("Pressione ENTER para voltar ao menu...");
 	while(getchar() != '\n');
 	system("cls");
 	menu();
@@ -1102,13 +1103,13 @@ void imprimirCreditos() {
 void sair() {
 		
 	system("cls");
-	printf("\n\n\n\n \t\t\t\t  ------------\n");
-	printf("\t\t    *****    \t | Até logo!! |\n"); 
-	printf("\t\t  *       *  \t /------------\n"); 
-	printf("\t\t *  O   O  * \t/\n"); 
-	printf("\t\t*     ^     *\n"); 
-	printf("\t\t*   \\___/   *\n"); 
-	printf("\t\t *         * \n"); 
-	printf("\t\t  *       *  \n");
-	printf("\t\t    *****    \n"); 
+	printf("\n\n\n\n\tAté logo!!");
+	printf("\t    *****    \n"); 
+	printf("\t\t\t  *       *  \n"); 
+	printf("\t\t\t *  O   O  * \n"); 
+	printf("\t\t\t*     ^     *\n"); 
+	printf("\t\t\t*   \\___/   *\n"); 
+	printf("\t\t\t *         * \n"); 
+	printf("\t\t\t  *       *  \n");
+	printf("\t\t\t    *****    \n"); 
 }
