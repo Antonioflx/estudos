@@ -3,9 +3,12 @@
 <p>Discente: <strong> Walace Sartori Bonfim </strong></p>
 
 <h3>EQUIPE:</h3>
-<ul>
+<ol>
    <li>Antonio Felix de Oliveira Neto </li> 
+   <ul>
+      <li><strong><a href="https://github.com/Antonioflx"> GITHUB</a></strong></li> 
+   </ul>
    <li>Dante Alves e Silva </li> 
    <li>Iloir Martins de Souza Neto </li> 
    <li>João Nicéforo Cantalice Neto</li> 
-</ul>
+</ol>
