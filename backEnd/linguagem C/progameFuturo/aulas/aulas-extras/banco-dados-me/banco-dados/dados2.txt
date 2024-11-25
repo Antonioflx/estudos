@@ -1,12 +1,12 @@
 
 		DADOS:
 
-*Nome: Antonio Felix de Oliveira Neto
-*Idade: 21	*Celular: (83) 99867-3147
+*Nome: Antonio Felix
+*Idade: 21	*Celular: 83 99867-3147
 
 		ENDEREÇO:
 
-*Cidade: Joao Pessoa
+*Cidade: Patos
 *Rua: Av.Acre
 *Nº: 184CEP: 58030-30
 *Bairro: Estados

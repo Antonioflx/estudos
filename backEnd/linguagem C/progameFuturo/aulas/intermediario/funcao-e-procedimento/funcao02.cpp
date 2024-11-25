@@ -50,9 +50,9 @@ int main() {
 	
 	char vet[20] = {"Ola, tudo bem?"};
 	
-	
 	printf("strlen: %d\n", strlen(vet));
 	printf("Minha funcao: %d\n", tamString(vet));
+	
 //	printf("Meu procedimento: %s\n", imprimirString(vet));
 // Nao da para utilizar printf(procedimento), visto que o printf espera um retorno, o qual o procedimento não irá ter.
 	imprimirString(vet);

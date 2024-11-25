@@ -1,6 +1,4 @@
-Quantidade: 2
+Quantidade: 0
 
 	Lista de Contatos:
 
-Antonio Felix	27 1 2003
-Camila Ellen	20 2 2003

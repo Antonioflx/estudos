@@ -22,11 +22,14 @@
 					1) O arquivo
 					2) Padrao que eu quero ler -> Mascaras
 					3) Variáveis
+								
 */
 
 // parametros -> vetor de caracteres.
 void escrever(char f[]) {
+	
 	FILE *file = fopen(f, "w+");
+	
 	char nome[50];
 	int opcao, idade;
 	float altura;
@@ -65,19 +68,15 @@ void ler(char f[]) {
 			printf("\n\tNome: %s\n\tIdade: %d\n\tAltura: %.2f\n", nome, idade, altura);
 		
 		
-		
 		fclose(file);
 	}
 }
-
 
 int main() {
 	// Definindo a lingua
 	setlocale(0, "Portuguese");
 	
-	
 	char nome[] = {"conto.txt"};
-	
 	escrever(nome);
 	ler(nome);
 	return 0;

@@ -24,7 +24,7 @@ void inicializarJogo() {
 // procedimento para imprimir o jogo na tela
 
 void imprimir() {
-	printf("\n\n\t 0   1   2 \n\n");
+	printf("\n\n\t 1   2   3 \n\n");
 	for(i = 0; i < 3; i++){
 		for(j = 0; j < 3; j++) {
 			if(j == 0)
@@ -34,7 +34,7 @@ void imprimir() {
 				printf("|");
 				
 			if(j == 2)
-				printf("   %d",i);
+				printf("   %d",i + 1);
 		}
 		
 		printf("\n");
@@ -152,12 +152,15 @@ void lerCoord(char j) {
 	
 	printf("\nDigite linha e coluna: ");
 	scanf("%d%d", &linha ,&coluna);
-	
+	fflush(stdin);
 	while(validarCoord(linha, coluna) == 0) {
 		printf("Coordenadas invalidas! Digite linha e coluna: ");
 		scanf("%d%d", &linha ,&coluna);
+		fflush(stdin);
 	}
 	
+	linha--;
+	coluna--;
 	jogo[linha][coluna] = j;
 }
 
