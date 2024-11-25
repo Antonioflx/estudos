@@ -9,16 +9,19 @@
       <li><strong><a href="https://github.com/Antonioflx">GITHUB</a></strong></li> 
       <li><strong><a href="https://www.linkedin.com/in/antonioflx">Linkedin</a></strong></li> 
    </ul>
+   <br>
    <li>Dante Alves e Silva </li> 
    <ul>
       <li><strong><a href="https://github.com/dante-alves">GITHUB</a></strong></li> 
       <li><strong><a href="https://www.linkedin.com/in/dante-alves-e-silva/">Linkedin</a></strong></li> 
    </ul>
+   <br>
    <li>Iloir Martins de Souza Neto </li> 
    <ul>
       <li><strong><a href="https://github.com/IloirDS">GITHUB</a></strong></li> 
       <li><strong><a href="https://www.linkedin.com/in/iloir-neto/">Linkedin</a></strong></li> 
    </ul>
+   <br>
    <li>João Nicéforo Cantalice Neto</li> 
    <ul>
       <li><strong><a href="https://github.com/Antonioflx">GITHUB</a></strong></li> 
