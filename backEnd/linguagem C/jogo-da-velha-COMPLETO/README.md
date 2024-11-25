@@ -5,27 +5,27 @@
 
 <h3>EQUIPE:</h3>
 <ol>
-   <li>Antonio Felix de Oliveira Neto </li> 
+   <li><strong>Antonio Felix de Oliveira Neto </strong></li> 
    <ul>
       <li><strong><a href="https://github.com/Antonioflx">GITHUB</a></strong></li> 
       <li><strong><a href="https://www.linkedin.com/in/antonioflx">Linkedin</a></strong></li> 
    </ul>
    <br>
-   <li>Dante Alves e Silva </li> 
+   <li><strong> Dante Alves e Silva </strong> </li> 
    <ul>
       <li><strong><a href="https://github.com/dante-alves">GITHUB</a></strong></li> 
       <li><strong><a href="https://www.linkedin.com/in/dante-alves-e-silva/">Linkedin</a></strong></li> 
    </ul>
    <br>
-   <li>Iloir Martins de Souza Neto </li> 
+   <li><strong> Iloir Martins de Souza Neto </strong> </li> 
    <ul>
       <li><strong><a href="https://github.com/IloirDS">GITHUB</a></strong></li> 
       <li><strong><a href="https://www.linkedin.com/in/iloir-neto/">Linkedin</a></strong></li> 
    </ul>
    <br>
-   <li>João Nicéforo Cantalice Neto</li> 
+   <li><strong> João Nicéforo Cantalice Neto </strong></li> 
    <ul>
-      <li><strong><a href="https://github.com/Antonioflx">GITHUB</a></strong></li> 
+      <li><strong><a href="https://github.com/DevJoao07">GITHUB</a></strong></li> 
       <li><strong><a href="https://www.linkedin.com/in/nic%C3%A9foro-neto-5331a9323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Linkedin</a></strong></li> 
    </ul>
 </ol>

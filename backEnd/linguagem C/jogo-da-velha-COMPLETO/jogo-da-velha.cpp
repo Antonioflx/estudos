@@ -1103,13 +1103,13 @@ void imprimirCreditos() {
 void sair() {
 		
 	system("cls");
-	printf("\n\n\n\n\tAté logo!!");
-	printf("\t    *****    \n"); 
-	printf("\t\t\t  *       *  \n"); 
-	printf("\t\t\t *  O   O  * \n"); 
-	printf("\t\t\t*     ^     *\n"); 
-	printf("\t\t\t*   \\___/   *\n"); 
-	printf("\t\t\t *         * \n"); 
-	printf("\t\t\t  *       *  \n");
-	printf("\t\t\t    *****    \n"); 
+	printf("\n\n\n\n \t\t\t\t  ------------\n");
+	printf("\t\t    *****    \t | Até logo!! |\n"); 
+	printf("\t\t  *       *  \t /------------\n"); 
+	printf("\t\t *  O   O  * \t/\n"); 
+	printf("\t\t*     ^     *\n"); 
+	printf("\t\t*   \\___/   *\n"); 
+	printf("\t\t *         * \n"); 
+	printf("\t\t  *       *  \n");
+	printf("\t\t    *****    \n"); 
 }
