@@ -1092,7 +1092,7 @@ void imprimirCreditos() {
 	printf("\t|\t\t\t\t\t  |");
 	printf("\n\t -----------------------------------------\n");
 	
-	printf("Pressione ENTER para voltar ao menu...");
+	printf("\nPressione ENTER para voltar ao menu...");
 	while(getchar() != '\n');
 	system("cls");
 	menu();
