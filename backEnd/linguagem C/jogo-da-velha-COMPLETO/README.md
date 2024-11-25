@@ -6,9 +6,22 @@
 <ol>
    <li>Antonio Felix de Oliveira Neto </li> 
    <ul>
-      <li><strong><a href="https://github.com/Antonioflx"> GITHUB</a></strong></li> 
+      <li><strong><a href="https://github.com/Antonioflx">GITHUB</a></strong></li> 
+      <li><strong><a href="https://www.linkedin.com/in/antonioflx">Linkedin</a></strong></li> 
    </ul>
    <li>Dante Alves e Silva </li> 
+   <ul>
+      <li><strong><a href="https://github.com/dante-alves">GITHUB</a></strong></li> 
+      <li><strong><a href="https://www.linkedin.com/in/dante-alves-e-silva/">Linkedin</a></strong></li> 
+   </ul>
    <li>Iloir Martins de Souza Neto </li> 
+   <ul>
+      <li><strong><a href="https://github.com/IloirDS">GITHUB</a></strong></li> 
+      <li><strong><a href="https://www.linkedin.com/in/iloir-neto/">Linkedin</a></strong></li> 
+   </ul>
    <li>João Nicéforo Cantalice Neto</li> 
+   <ul>
+      <li><strong><a href="https://github.com/Antonioflx">GITHUB</a></strong></li> 
+      <li><strong><a href="https://www.linkedin.com/in/nic%C3%A9foro-neto-5331a9323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Linkedin</a></strong></li> 
+   </ul>
 </ol>
