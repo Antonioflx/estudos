@@ -8,7 +8,7 @@ export default function ContextTextComponent() {
 		<h1
 			style={{
 				color: theme,
-				fontSize: theme === "lightblue" ? "30px" : "50px",
+				fontSize: theme === "lightblue" ? "50px" : "60px",
 			}}
 		>
 			{" "}

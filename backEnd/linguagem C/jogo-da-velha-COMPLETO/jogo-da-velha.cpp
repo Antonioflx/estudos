@@ -1007,18 +1007,8 @@ void aumentarRank(int *index, int *quantidade, int *qtdJogadores) {
 	printf("SELECIONE: ");
 	scanf("%d", &opcao);
 	
-	if(opcao == 3 && *qtdJogadores <= 20) {
+	while(opcao < 1 || opcao > 3 || (opcao == 3 && *qtdJogadores <= 20)) {
 		system("cls");
-		printf("\n\n\t[ERROR] -> Valor inválido! ");
-		printf("\n------------------------------------------\n");
-		return aumentarRank(index, quantidade, qtdJogadores);
-	}
-	
-	// validar a reposta.
-	fflush(stdin);
-	while(opcao < 1 || opcao > 3) {
-		system("cls");
-//		imprimirRanking(index, quantidade);
 		printf("\n\n\t[ERROR] -> Valor inválido! ");
 		printf("\n------------------------------------------\n");
 		*qtdJogadores <= 20 
@@ -1026,7 +1016,8 @@ void aumentarRank(int *index, int *quantidade, int *qtdJogadores) {
 			: printf("\n[1.] -> Ver o ranking do 0 - 10\n[2.] -> Ver o ranking do 11 - 20\n[3.] -> Ver o ranking do 21 - 30\n");
 		printf("SELECIONE: ");
 		scanf("%d", &opcao);
-		fflush(stdin);
+		fflush(stdin);	
+		
 	}
 	
 	// de acordo com a opcao do usu definir o resultado.

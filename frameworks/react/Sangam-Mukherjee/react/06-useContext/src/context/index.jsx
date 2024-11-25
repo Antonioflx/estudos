@@ -9,7 +9,7 @@ export const GlobalContext = createContext(null); // (valor padrão)
 
 // create the global state.
 export default function GlobalState({ children }) {
-	const [theme, setTheme] = useState("red");
+	const [theme, setTheme] = useState("lightblue");
 
 	function handleChangeTheme() {
 		setTheme(theme === "lightblue" ? "lightsalmon" : "lightblue");
