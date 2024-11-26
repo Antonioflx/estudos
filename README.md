@@ -15,14 +15,14 @@
             Projetos iniciantes, só para ver a funcionalidade;
      </li>
      <li>
-        <strong>JavaScript(intermediário, quase avançado)</strong> -> Traversy Media; (Done) <br>
+        <strong>JavaScript(intermediário)</strong> -> Traversy Media; (Done) <br>
             Projeto -> Shopping List.
      </li>
      <li>
         <strong>PHP8(básico)</strong> -> Guanabara; (Done)
      </li>
      <li>
-        <strong>Linguagem C (intermediário e avançando)</strong> -> Progame seu futuro; (In progressing...)
+        <strong>Linguagem C (intermediário)</strong> -> Progame seu futuro; (In progressing...)
      </li>
     <li>
         <strong>React</strong> -> freeCodeCamp.org; (In progressing...)
