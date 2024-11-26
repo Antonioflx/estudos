@@ -207,13 +207,13 @@ void tutorial() {
 		imprimir();
 		if(jogador == 1) {
 			printf("\n\nJogador 1 = 'X'.");
-			lerCoord(jogador1);
-			jogador++;
+			lerCoord(jogador1); // lercoords
+			jogador++; // acrescentar para passar para o jogador 2
 		} 
 		else {
 			printf("\nJogador 2 = 'O'");
 			lerCoord(jogador2);
-			jogador = 1;
+			jogador = 1; // atribuir novamente para o jogador 1
 			imprimir();
 		}
 		
@@ -746,14 +746,15 @@ void pedirDados(char *usuario1, char *usuario2) {
 	
 	printf("Apelido do jogador 1 (limite de 20 caracteres): ");
 	scanf("%21[^\n]", usuario1); 
-	while(getchar() != '\n'); // Evitar que caso o usuario digite +de 10 caracteres passe para usu2.
-	int tamUser1 = strlen(usuario1);
+	
+	while(getchar() != '\n'); // Evitar que caso o usuario digite +de 10 caracteres -> esses caracteres passe para usu2.
+	int tamUser1 = strlen(usuario1); // tamanho do usuario
+	
 	printf("Apelido do jogador 2 (limite de 20 caracteres: ");
 	scanf("%21[^\n]", usuario2);
 	while(getchar() != '\n'); // Evitar que caso o usuario digite +de 10 evite um erro.
 	int tamUser2 = strlen(usuario2);
 	
-	printf("\n\n\nTAMANHO: %d", tamUser1);
 	trocarCaractere(usuario1, tamUser1, usuario2, tamUser2);
 }
 
@@ -879,6 +880,10 @@ void atualizarJogador(t_Usuario *user, int *qtdJogadores, char *nome, int result
 // funcao para encontrar a posição do jogador.
 int encontrarJogador(t_Usuario *user, int qtdJogadores, char *nome) {	
 	for(i = 0; i < qtdJogadores; i++) {
+		// strcmp -> compara dois nomes. Caso os nomes sejam iguais retornam 0
+		// O problema é que ele n compara Maiuscula e Minuscula
+		
+		// Entao o stricmp -> compara minuscula e maiuscula D == d
 		if(stricmp(user[i].nome, nome) == 0) 
 			return i; 
 	}
@@ -927,7 +932,7 @@ void imprimirRanking(int *pIndexStart, int *pTamRank) {
 	// chamando a função lerRanking para pegar a qtdJogadores.
 	lerRanking(ranking, &qtdJogadores); 
 
-	
+	// caso n"ao exista, imprimir ao usuario um "erro".
 	if(qtdJogadores == 0) {
 		printf("\nOps... :(\nNo momento não há ninguém no ranking:\n");
 	}	
@@ -985,7 +990,7 @@ void imprimirRanking(int *pIndexStart, int *pTamRank) {
 				system("cls");
 		}		
 	}
-	
+	// liberando a memoria.
 	free(ranking);
 	ranking = NULL;
 }
@@ -1007,6 +1012,13 @@ void aumentarRank(int *index, int *quantidade, int *qtdJogadores) {
 	printf("SELECIONE: ");
 	scanf("%d", &opcao);
 	
+	/*
+		 validar a resposta 
+		 
+		 (opcao == 3 && *qtdJogadores <= 20) 
+		 É devido que, caso não tenha mais de 20 jogadores, não irá aparecer de imprimir a posição 21-30
+		 Então, se não tiver, caso o usu digite 3 dar erro.
+	*/
 	while(opcao < 1 || opcao > 3 || (opcao == 3 && *qtdJogadores <= 20)) {
 		system("cls");
 		printf("\n\n\t[ERROR] -> Valor inválido! ");
