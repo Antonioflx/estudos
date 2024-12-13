@@ -5,8 +5,7 @@
 
 
 /*
-	// Aula 215: AGENDA DE ANIVERSÁRIOS.:
-
+	AULA 220: AGENDA COM BINÁRIO
 */
 
 typedef struct {
@@ -34,13 +33,13 @@ void imprimir(t_Contato **contato, int quant) {
 // cadastrar o contato
 int cadastrarContato(t_Contato **contato, int quant, int tam) {
 	
-	// fazer a verificação se quantidade é menor que o tamanho limite do vetor
+	// fazer a verifica??o se quantidade ? menor que o tamanho limite do vetor
 	if(quant < tam) {
 		t_Contato *novo = (t_Contato*)malloc(sizeof(t_Contato));
 		
 		printf("\nDigite o nome do contato: ");
 		scanf("%50[^\n]", novo->nome);
-		printf("\nDigite a data de aniversário [Dia, Mes, Ano]: ");
+		printf("\nDigite a data de anivers?rio [Dia, Mes, Ano]: ");
 		scanf("%d%d%d", &novo->dia, &novo->mes, &novo->ano);
 		getchar();
 		contato[quant] = novo;
@@ -132,6 +131,38 @@ int lerArq(t_Contato **contato, char f[]) {
 	
 }
 
+void salvarB(char arq[], t_Contato **contato, int quant) {
+
+	FILE *file = fopen(arq, "wb");
+
+	if(file) {
+		for(int i = 0; i < quant; i++)
+			fwrite(contato[i], sizeof(t_Contato), 1, file);	
+		fclose(file);
+	} else	
+		printf("\nNão foi possível abrir o arquivo\n");
+}
+
+int lerB(char arquivo[], t_Contato **contato) {
+
+	int quantidade = 0;
+	t_Contato *novo = (t_Contato*)malloc(sizeof(t_Contato));
+
+	FILE *file = fopen(arquivo, "rb");
+
+	if(file) {
+		while(fread(novo, sizeof(t_Contato), 1, file)) {
+			contato[quantidade] = novo;
+			quantidade++;
+			novo = (t_Contato*)malloc(sizeof(t_Contato));
+		}
+		fclose(file);
+	} else
+		printf("\nNão foi possível abrir o arquivo\n");
+
+	return quantidade;
+}
+
 
 int main() {
 	// Definindo a lingua
@@ -140,16 +171,17 @@ int main() {
 	t_Contato *agenda[50];
 	int opcao, tam = 50, quant = 0;
 	char arquivo[] = {"agenda.txt"};
+	char arquivo2[] = {"agenda.dat"};
 	
 	do {
-		printf("\n\t[0] -> Sair\n\t[1] -> Cadastrar\n\t[2] -> Altera\n\t[3] -> Imprimir\n\t[4] -> Salvar no arquivo\n\t[5] -> Ler arquivo\n");
+		printf("\n\t[0] -> Sair\n\t[1] -> Cadastrar\n\t[2] -> Altera\n\t[3] -> Imprimir\n\t[4] -> Salvar no arquivo\n\t[5] -> Ler arquivo\n\t[6] -> SalvarB\n\t[7] -> LerB\n");
 		printf("\nSelecione: ");
 		scanf("%d", &opcao);
 		getchar();
 		
 		while(opcao == 2 && quant == 0) {
-			printf("\n\nNão há contatos para alterar:\nSelecione um numéro valido!\n");
-			printf("\n\t[0] -> Sair\n\t[1] -> Cadastrar\n\t[2] -> Altera\n\t[3] -> Imprimir\n\t[4] -> Salvar no arquivo\n\t[5] -> Ler arquivo\n");
+			printf("\n\nNão há contatos para alterar:\nSelecione um número valido!\n");
+			printf("\n\t[0] -> Sair\n\t[1] -> Cadastrar\n\t[2] -> Altera\n\t[3] -> Imprimir\n\t[4] -> Salvar no arquivo\n\t[5] -> Ler arquivo\n\t[6] -> SalvarB\n\t[7] -> LerB\n");
 			printf("\nSelecione: ");
 			scanf("%d", &opcao);
 			getchar();
@@ -158,32 +190,40 @@ int main() {
 		switch(opcao) {
 			
 			case 0 :
-			break;
+				break;
 				
 			case 1 :
 				quant += cadastrarContato(agenda, quant, tam);
 				system("cls");
-			break;
+				break;
 			
 			case 2 :
 				system("cls");
 				alterarContato(agenda, quant);
-			break;
+				break;
 			
 			case 3 :
 				system("cls");
 				imprimir(agenda, quant);
-			break;
+				break;
 			
 			case 4:
 				saveInArq(agenda, quant, arquivo);	
-			break;
+				break;
 			
 			case 5:
 				system("cls");
 				lerArq(agenda, arquivo);
 				printf("\nSelecione a opção de imprimir para ver os dados:\n");
-			break;
+				break;
+
+			case 6:
+				salvarB(arquivo2, agenda, quant);
+				break;
+
+			case 7:
+				quant = lerB(arquivo2, agenda);
+				break;
 				
 			default : printf("\n\n\tValor inválido!\n"); break;
 		}
@@ -192,3 +232,4 @@ int main() {
 	// colocar em arquivos
 	return 0;
 } 
+
