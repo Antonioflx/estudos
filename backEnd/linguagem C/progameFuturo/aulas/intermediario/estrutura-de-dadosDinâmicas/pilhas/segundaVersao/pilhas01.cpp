@@ -6,9 +6,8 @@
 
 /*
 		Aula 225: Estruturas de dados dinâmicas
+			Pilhas: Segunda versão.
 		
-		Imprimir.
-
 */
 
 typedef struct {
@@ -25,6 +24,18 @@ typedef struct no {
 	struct no *proximo;
 } t_No;
 
+// teremos um ponteiro especificamente para o topo
+
+typedef struct {
+	t_No *topo;
+	int tam;
+} t_Pilha;
+
+// procedimento para criar a pilha
+void criarPilha (t_Pilha *p) {
+	p->topo = NULL;
+	p->tam = 0;
+}
 
 t_Pessoa lerPessoa() {
 	t_Pessoa p;
@@ -45,8 +56,9 @@ void imprimirPessoa (t_Pessoa p) {
 }
 
 // função para a operação push (empilhar)
-// Retornar um ponteiro para o Nó
-t_No* empilhar(t_No *topo) { // parametro uma copia do ponteiro topo (NULL)
+// nao precisamos retornar nada na segunda versao, porque vamos receber um ponteiro
+// para a pilha
+void empilhar(t_Pilha *p) { // parametro uma copia do ponteiro topo (NULL)
 
 	// criando um novo nó
 	t_No *novo = (t_No*)malloc(sizeof(t_No));
@@ -56,29 +68,28 @@ t_No* empilhar(t_No *topo) { // parametro uma copia do ponteiro topo (NULL)
 		novo->p = lerPessoa();
 		
 		// atribuindo para a estrutura de no *proximo -> para o topo (antigo NULL)
-		novo->proximo = topo;
-		
-		return novo; // retornar novo.
-		 
+		novo->proximo = p->topo;
+			 
+		// em vez de retornar o novo na main, só atribuir para o topo da pilha
+		p->topo = novo;
+		p->tam++;
 	}
 	else
 		printf("\nErro ao alocar memória...\n");
-	return NULL;
 }
 
 // função para a operação pop (desempilhar)
 // Retornar um ponteiro para o Nó
-t_No* desempilhar(t_No **topo) { // parametro o endereço de memória do ponteiro -> para altera o valor do topo.
-	
+t_No* desempilhar(t_Pilha *p) { // parametro o endereço de memória do ponteiro -> para altera o valor do topo.
 	// conteudo do ponteiro (*topo) é diferente de NULL (A pilha está preenchida)
-	if(*topo) {
+	if(p->topo) {
 		
 		// 1 passo criar um ponteiro para receber o topo
-		t_No *remover = *topo;
+		t_No *remover = p->topo;
 		
 		// 2 passo fazer que o topo aponte para o próximo ponteiro
-		*topo = remover->proximo;
-		
+		p->topo = remover->proximo;
+		p->tam--;
 		return remover;
 		
 		
@@ -89,16 +100,16 @@ t_No* desempilhar(t_No **topo) { // parametro o endereço de memória do ponteiro 
 	
 }
 
- void imprimirPilha(t_No *topo) {
-	
-	printf("\n----------------------- PILHA -------------------------\n");
+ void imprimirPilha(t_Pilha *p) {
+	t_No *aux = p->topo; // criando um nó auxiliar para apontar para o topo da pilha.
+	printf("\n----------------------- PILHA Tam: %d -------------------------\n", p->tam);
 	// fazer um loop enquanto não chega em NULL (fim da pilha)
-	while(topo) {
+	while(aux) {
 		
 		// procedimento para imprimir pessoa
-		imprimirPessoa(topo->p);
+		imprimirPessoa(aux->p);
 		// atribuir o topo o ponteiro do proximo ponteiro, se nao entra em loop
-		topo = topo->proximo;
+		aux = aux->proximo;
 		
 	}
 	
@@ -112,7 +123,10 @@ int main() {
 	setlocale(0, "Portuguese");
 	
 	// criando o no do topo
-	t_No *remover, *topo = NULL;
+	t_No *remover;
+	t_Pilha p;
+	
+	criarPilha(&p);
 	int opcao;
 	
 	do {
@@ -125,12 +139,12 @@ int main() {
 			case 0: break;
 			
 			case 1:
-				topo = empilhar(topo);
+				empilhar(&p);
 				
 				break;
 			
 			case 2:
-				remover = desempilhar(&topo);
+				remover = desempilhar(&p);
 				
 				if(remover) {
 					printf("\nElemento removido com sucesso!\n");
@@ -142,7 +156,7 @@ int main() {
 				break;
 				
 			case 3:
-				imprimirPilha(topo);
+				imprimirPilha(&p);
 				break;
 			
 			default: printf("\n\n\t[ERROR] -> Valor inválido!\n\n"); break;

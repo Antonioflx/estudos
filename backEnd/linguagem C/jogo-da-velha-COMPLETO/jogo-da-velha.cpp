@@ -1100,6 +1100,7 @@ void imprimirCreditos() {
 	system("cls");
 	menu();
 	
+
 }
 
 // procedimento caso o usuário escolha sair.
