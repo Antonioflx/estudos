@@ -1,0 +1,15 @@
+Fila -> prestação de serviço é mais lenta que a demanda.
+
+Tipo FiFo -> First In, First Out *Primeiro a entra, Primeiro a sair*
+
+Fila de Caixa de banco.
+Fila de processos.
+
+*Operações:*
+
+-> Inserir na fila (final)
+-> Remover da fila (inicio)
+
+*Filas de prioridade:*
+
+-> Preferência

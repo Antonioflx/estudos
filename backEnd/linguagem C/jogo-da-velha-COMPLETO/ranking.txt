@@ -1,3 +1,4 @@
-Antonio* 1 0 1 2
-Arthur* 0 0 1 0
+Antonio* 3 0 1 6
 Thiago* 1 0 0 2
+Arthur* 0 0 1 0
+Breno* 0 0 2 0

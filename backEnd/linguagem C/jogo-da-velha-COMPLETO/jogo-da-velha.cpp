@@ -336,7 +336,7 @@ void lerCoord(char j) {
 		2 colchete -> Resto = Dividendo - (Quociente x Divisor) -> R = 1 - (0 x 3) -> R = 1
 		jogo[0][1] -> linha 0, coluna 1.
 	*/
-	jogo[(posicao - 1)/3][(posicao - 1) % 3] = j;
+	jogo[(posicao - 1)/3][(posicao - 1) % 3] = j; 
 }
 
 /*

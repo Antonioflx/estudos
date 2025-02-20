@@ -55,6 +55,7 @@ void imprimir(t_No *pilha) {
 	}
 	printf("\tFIM PILHA\n");
 }
+
 // funcao para verificar se () [] {} formam par.
 // irrelevante (professor fez). Solução do desafio.
 int formaPar (char fechamento, char desempilhar) {

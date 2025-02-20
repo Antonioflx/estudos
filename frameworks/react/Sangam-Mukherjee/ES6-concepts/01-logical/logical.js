@@ -21,3 +21,11 @@ function getName(name) {
 	return name || "Não tem nome";
 }
 console.log(getName());
+
+// usando ??
+// retorna o primerio valor nao luno e não indefinido
+
+// let a = null
+// let c = 0;
+// clg(a ?? 'valor nao nulo'); // "valor nao nulo"
+// clg (c ?? 'valor nao nulo"); // 0;
