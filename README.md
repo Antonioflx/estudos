@@ -4,28 +4,22 @@
 
  <ol type="1">
      <li>
-        <strong>Visual (portugol)</strong> -> Guanabara; (Done)
+        <strong>Visual (portugol)</strong>
      </li>
      <li>
-        <strong>HTML5 e CSS3 (Intermediário, quase avançado)</strong> -> Guanabara; (Done)<br> 
-            Projetos iniciantes, só para ver a funcionalidade;
+        <strong>HTML5 e CSS3</strong><br> 
      </li>
      <li>
-        <strong>JavaScript (iniciante)</strong> -> Guanabara; (Done)<br>
-            Projetos iniciantes, só para ver a funcionalidade;
+        <strong>JavaScript</strong> <br>
      </li>
      <li>
-        <strong>JavaScript (Intermediário)</strong> -> Traversy Media; (Done) <br>
-            Projeto -> Shopping List.
+        <strong>PHP8 </strong>
      </li>
      <li>
-        <strong>PHP8 (Básico)</strong> -> Guanabara; (Done)
-     </li>
-     <li>
-        <strong>Linguagem C (Intermediário)</strong> -> Progame seu futuro; (In progressing...)
+        <strong>Linguagem C </strong>
      </li>
     <li>
-        <strong>React</strong> -> freeCodeCamp.org; (In progressing...)
+        <strong>React</strong>
     </li>
  </ul>
 
