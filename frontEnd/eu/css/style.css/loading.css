@@ -1,0 +1,77 @@
+body {
+	background-color: rgba(51, 48, 48, 0.493);
+}
+
+#container-principal {
+	height: 90vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
+
+img {
+	width: 100px;
+	animation: load 6s linear infinite;
+}
+
+@keyframes load {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#loading-text {
+	display: flex;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#loading-text span {
+	padding-top: 20px;
+	display: inline-block;
+	animation: bounce 4s ease-in-out infinite;
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-8px);
+	}
+}
+
+#loading-text span:nth-child(1) {
+	animation-delay: 0s;
+}
+#loading-text span:nth-child(2) {
+	animation-delay: 0.1s;
+}
+#loading-text span:nth-child(3) {
+	animation-delay: 0.2s;
+}
+#loading-text span:nth-child(4) {
+	animation-delay: 0.3s;
+}
+#loading-text span:nth-child(5) {
+	animation-delay: 0.4s;
+}
+#loading-text span:nth-child(6) {
+	animation-delay: 0.5s;
+}
+#loading-text span:nth-child(7) {
+	animation-delay: 0.6s;
+}
+#loading-text span:nth-child(8) {
+	animation-delay: 0.7s;
+}
+#loading-text span:nth-child(9) {
+	animation-delay: 0.8s;
+}
