@@ -54,7 +54,7 @@ t_No *removerDaFila(t_No **fila) {
 	
 	// verificar se a fila está vazia ou n
 	if(*fila) { // fila preenchida
-		remover = *fila; // ponteiro remover -> recebe o conteúdo (ultimo) da fila
+		remover = *fila; // ponteiro remover -> recebe o conteúdo do primeiro elemento  da fila
 		// autalizar a fila
 		*fila = remover->proximo;
 	} else
