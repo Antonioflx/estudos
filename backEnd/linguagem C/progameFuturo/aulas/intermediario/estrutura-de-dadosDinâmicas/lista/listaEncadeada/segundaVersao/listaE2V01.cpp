@@ -2,10 +2,8 @@
 #include	<stdlib.h>
 
 /*
-		Aula 245: Lista Simplesmente Encadeada
-			Como inserir no Meio da lista (aula 245)
-			e imprimir a mesma (aula 246)?
-		
+		Aula 247: Lista Simplesmente Encadeada
+		Segunda versão com a estrutura lista 
 		
 */
 
@@ -15,16 +13,31 @@ typedef struct no {
 	struct no *proximo; // ponteiro para apontar para o proximo no
 } t_No;
 
+// agora temos a nossa struct própria de lista
+
+typedef struct {
+	t_No *inicio; // ponteiro que aponta para o inicio.
+	int tam; // tamanho	
+} t_Lista;
+
+// procedimento para incializar a lista
+
+void criarLista (t_Lista *lista) {
+	lista->inicio = NULL;
+	lista->tam = 0;
+}
+
 // procedimento para inserir no inicio
 // parameto ponteiro para ponteiro, pois precisamos alterar o valor.
-void inserirInicio(t_No **lista, int num) {
+void inserirInicio(t_Lista *lista, int num) {
 	t_No *novo = (t_No*)malloc(sizeof(t_No));
 	
 	if(novo) {
 		novo->valor = num; // receber o dado
-		novo->proximo = *lista; // novo->proximo aponta para o inicio da lista atual
+		novo->proximo = lista->inicio; // novo->proximo aponta para o inicio da lista atual
 		
-		*lista = novo; // inicio da lista recebe o novo nó
+		lista->inicio = novo; // inicio da lista recebe o novo nó
+		lista->tam++; // acrescetando o tamanho.
 		 
 	} else 
 		printf("\nError\n");
@@ -32,19 +45,19 @@ void inserirInicio(t_No **lista, int num) {
 }
 
 // procedimento para inserir no meio 
-// parametros -> endereço lista, valor (dado), ant (dado anterior).
-void inserirMeio (t_No **lista, int valor, int ant) {
+// parametros -> lista, valor (dado), ant (dado anterior).
+void inserirMeio (t_Lista *lista, int valor, int ant) {
 	
 	t_No *novo = (t_No*)malloc(sizeof(t_No)); // alocando memoria para o ponteiro novo (receber os dados)
-	t_No *aux = *lista; // var aux
+	t_No *aux = lista->inicio; // var aux
 	
 	if(novo){
 		novo->valor = valor; // dado
 		
 		// lista vazia?
-		if(!*lista) { 
+		if(!lista->inicio) { 
 			novo->proximo = NULL; // o novo vai apontar para o final NULL
-			*lista = novo;  // *lista  recebe o novo nó
+			lista->inicio = novo;  // *lista  recebe o novo nó
 		} else { // caso não esteja
 			/*
 				fazer 2 verificações
@@ -62,6 +75,7 @@ void inserirMeio (t_No **lista, int valor, int ant) {
 			novo->proximo = aux->proximo;
 			aux->proximo = novo;
 		}
+		lista->tam++; // incremetando o tamanho.
 			
 		
 		
@@ -72,8 +86,8 @@ void inserirMeio (t_No **lista, int valor, int ant) {
 
 
 // procedimento para inserir no final
-void inserirFim (t_No **lista, int num) {
-	t_No *aux = *lista;
+void inserirFim (t_Lista *lista, int num) {
+	t_No *aux = lista->inicio;
 	t_No *novo = (t_No*)malloc(sizeof(t_No));
 	
 	if(novo) {
@@ -82,8 +96,8 @@ void inserirFim (t_No **lista, int num) {
 		novo->proximo = NULL; // NULL -> pq é o ultimo nó
 		
 		// verificar se a lista está vazia
-		if(!*lista) 
-			*lista = novo; // recebe o conteudo novo.
+		if(!lista->inicio) 
+			lista->inicio = novo; // recebe o conteudo novo.
 		else { // caso de facil, existe um nó. Mas, existe um próximo nó?
 			// fazer loop até achar o nó final.
 			while(aux->proximo) // aux->proximo != NULL
@@ -91,6 +105,7 @@ void inserirFim (t_No **lista, int num) {
 			// achou o no final == NULL
 			aux->proximo = novo; // colocando o vlaor no final.
 		} 		
+		lista->tam++; // incremetando
 	} else 
 		printf("\nERRO ao alocar memória\n");
 	
@@ -98,17 +113,18 @@ void inserirFim (t_No **lista, int num) {
 
 
 // procedimento para imprimir.
-void imprimirLista(t_No *lista) {
+void imprimirLista(t_Lista lista) {
+	t_No *no = lista.inicio;
 	
-	printf("\n-------I N I C I O - LISTA -------\n");
-	while(lista) { // lista != NULL
-		printf("%d ", lista->valor); // imprimir dado
-		lista = lista->proximo; // autalizando o nó
+	printf("\n-------I N I C I O - LISTA tam: %d-------\n", lista.tam);
+	while(no) { // lista != NULL
+		printf("%d ", no->valor); // imprimir dado
+		no = no->proximo; // autalizando o nó
 	}
 	printf("\n----------------------------------\n");
 }
 
-void menu(t_No *lista) {
+void menu(t_Lista lista) {
 	
 	int opcao, dado, ant;
 	
@@ -152,7 +168,10 @@ void menu(t_No *lista) {
 
 int main() {
 	
-	t_No *lista = NULL;
+//	t_No *lista = NULL;
+	t_Lista lista;
+	
+	criarLista(&lista);
 	
 	menu(lista);
 	

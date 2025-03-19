@@ -2,9 +2,8 @@
 #include	<stdlib.h>
 
 /*
-		Aula 245: Lista Simplesmente Encadeada
-			Como inserir no Meio da lista (aula 245)
-			e imprimir a mesma (aula 246)?
+		Aula 248: Lista Simplesmente Encadeada
+		Como inserir de forma ordenada SEM a estrutura Lista?
 		
 		
 */
@@ -108,12 +107,82 @@ void imprimirLista(t_No *lista) {
 	printf("\n----------------------------------\n");
 }
 
+/*
+void inserirOrdenado(t_No **lista, int num) {
+	t_No *aux = *lista, *novo = (t_No*)malloc(sizeof(t_No*));
+	
+	if(novo) {
+		novo->valor = num;
+		
+		if(!*lista) {
+			novo->proximo = NULL;
+			*lista = novo;
+		} else if(novo->valor < (*lista)->valor) {
+			novo->proximo = *lista;
+			*lista = novo;
+		} else {
+			while(aux->proximo && novo->valor > aux->proximo->valor)
+				aux = aux->proximo;
+				
+			novo->proximo = aux->proximo; // novo->proximo recebe o proximo no
+			aux->proximo = novo;
+		}
+	} else
+		printf("\nError ao alocar memória\n");
+}
+*/
+
+// professor utilizou void. Mas, achei utilizar int melhor, pois retorno nas condições.
+int inserirOrdenado(t_No **lista, int num) {
+	
+	// var aux recebe lista, novo será para receber os valores
+	t_No *aux = *lista, *novo = (t_No*)malloc(sizeof(t_No*));
+	
+	if(novo) { // alocação deu certo
+		novo->valor = num; // atribuindo o valor
+		if(!*lista) { // lista está vazia? 
+			// s
+			novo->proximo = NULL; // o final é nulo
+			*lista = novo; // lista recebe o valor
+			return 1;
+		}
+		
+		if(novo->valor < (*lista)->valor) { // novo->valor (valor da var num) é menor que o num do primeiro No? (*lista)->valor
+			// s
+			novo->proximo = *lista; // o proximo nó aponta para lista
+			*lista = novo; // e lista recebe o novo nó
+			return 1;
+		}
+		
+		/*
+			loop para fazer 2 verificações
+				1. aux->proximo -> existe um próximo nó?
+				2. novo->valor >  aux->proximo->valor // o valor do no criado atual é maior que o próximo valor do próximo nó?
+				
+				S -> percorre. até uma das condiçÕes falhar
+					1. Não existe outro nó, ou seja, novo->valor é o maior nó
+					2. Existe outro nó, mas o valor de novo->valor 	é menor que o valor do próximo no aux->proximo->valor.
+				
+		*/
+		while(aux->proximo && novo->valor > aux->proximo->valor)
+			aux = aux->proximo; // autalizando o nó
+		
+		// falhou o loop por uma das condiçõES
+		novo->proximo = aux->proximo; // novo->proximo recebe o proximo no
+		aux->proximo = novo; // e o nó recebe novo.
+		return 1;	
+	} 
+	
+	printf("\nError ao alocar memoria");
+	return 0;
+}
+
 void menu(t_No *lista) {
 	
 	int opcao, dado, ant;
 	
 	do {
-		printf("\n\t[0.] - Sair\n\t[1.] - Inserir-Inicio\n\t[2.] - Inserir-Meio\n\t[3.] - Inserir-Fim\n\t[4.] - Imprimir\n\nInforme: ");
+		printf("\n\t[0.] - Sair\n\t[1.] - Inserir-Inicio\n\t[2.] - Inserir-Meio\n\t[3.] - Inserir-Fim\n\t[4.] - Inserir-Ordenado\n\t[5.] - Imprimir\n\nInforme: ");
 		scanf("%d", &opcao);
 			
 		switch(opcao) {
@@ -139,6 +208,11 @@ void menu(t_No *lista) {
 				break;
 				
 			case 4 :
+				printf("\nDigite um dado: ");
+				scanf("%d", &dado);
+				inserirOrdenado(&lista, dado);
+			
+			case 5 :
 				imprimirLista(lista);
 				break;
 			default:

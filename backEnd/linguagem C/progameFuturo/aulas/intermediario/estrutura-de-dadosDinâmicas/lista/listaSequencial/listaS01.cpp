@@ -130,22 +130,22 @@ int remove (Lista *lista) {
 }
 
 
-// remover -> Antonio.
-Lista* removeAntonio (Lista **lista, int pos, Contato dado) {
-	
-	/*
-		C1 C2 C3 C4 C5 -> C1 C2 X C4 C5 - (eliminar C3) -> Conceito, seria assim. E deslocaria tudo para a esquerda, pois não pode ter intervalo.
-		
-		C1 C2 C5 C4 C3 -> C1 C2 X C4 C5  -> (Elimnar C3) -> Quero por o C3 Na posição final, e inverter a posição final com o C3. Para que n precisa fazer um loop. ,   
-		
-		C1 C2 X C4 C5  
-		
-	*/
-	
-	Lista *aux = *lista->vetor[pos];
-	
-	return 
-}
+//// remover -> Antonio.
+//Lista* removeAntonio (Lista **lista, int pos, Contato dado) {
+//	
+//	/*
+//		C1 C2 C3 C4 C5 -> C1 C2 X C4 C5 - (eliminar C3) -> Conceito, seria assim. E deslocaria tudo para a esquerda, pois não pode ter intervalo.
+//		
+//		C1 C2 C5 C4 C3 -> C1 C2 X C4 C5  -> (Elimnar C3) -> Quero por o C3 Na posição final, e inverter a posição final com o C3. Para que n precisa fazer um loop. ,   
+//		
+//		C1 C2 X C4 C5  
+//		
+//	*/
+//	
+//	Lista *aux = (*lista)->vetor[pos];
+//	
+//	return 
+//}
 
 
 int findUser(Contato dado1, Contato dado2) {
@@ -180,9 +180,9 @@ int	main()
 	setlocale(0, "Portuguese");
 
 	Lista	minhaLista;
-	Contato	aux_cnt = {"LUIZ", "44444"};
-	Contato	aux_cnt1 = {"TOIN", "123456"};
-	Contato	aux_cnt2 = {"JOSE", "1234567"};
+//	Contato	aux_cnt = {"LUIZ", "44444"};
+//	Contato	aux_cnt1 = {"TOIN", "123456"};
+//	Contato	aux_cnt2 = {"JOSE", "1234567"};
 	minhaLista = criar();
 	
 	if (isVazia(&minhaLista))
@@ -190,24 +190,24 @@ int	main()
 	else
 		printf("Lista com elementos");
 	
-	inserir(&minhaLista, 0, aux_cnt);
-	inserir(&minhaLista, 1, aux_cnt1);
-	inserir(&minhaLista, 2, aux_cnt2);
+//	inserir(&minhaLista, 0, aux_cnt);
+//	inserir(&minhaLista, 1, aux_cnt1);
+//	inserir(&minhaLista, 2, aux_cnt2);
 //	mostrar(&minhaLista);
 	
 	// remove
 //	remove(&minhaLista);
-	mostrar(&minhaLista);
+//	mostrar(&minhaLista);
 	
 	// Onde está toin
-	printf("Usuário %s está na posição [%d]", aux_cnt2.nome, (getValue(&minhaLista, aux_cnt2) + 1));
+//	printf("Usuário %s está na posição [%d]", aux_cnt2.nome, (getValue(&minhaLista, aux_cnt2) + 1));
 
 	
 	// achar os valores da posição X.
-	Contato *dado = find_posValue(&minhaLista, 1); // pos 2.
-	printf("\n\nNome: [%s]\nTelefone: [%s]\n",
-                                        dado->nome, 
-                                        dado->telefone);
+//	Contato *dado = find_posValue(&minhaLista, 1); // pos 2.
+//	printf("\n\nNome: [%s]\nTelefone: [%s]\n",
+//                                        dado->nome, 
+//                                        dado->telefone);
 	
 		
 }
