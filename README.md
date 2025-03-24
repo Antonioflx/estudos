@@ -21,6 +21,9 @@
     <li>
         <strong>React</strong>
     </li>
+   <li>
+        <strong>Next</strong>
+    </li>
  </ul>
 
 
