@@ -91,13 +91,15 @@ int main() {
 	// chamando o menu para o jogador definir o seu caminho.
 	menu();
 		
-	
 	// Liberando a memória
 	for ( i = 0 ; i < 3 ; i ++) {
 		free(*(jogo + i));
 		*(jogo + i) = NULL;
 	}
-		
+
+	
+	
+	//
 	free(jogo);
 	jogo = NULL;
 	return 0;
@@ -454,7 +456,6 @@ void jogar() {
 	
 	// alocando dinamicamente. // 50 * 40 bytes = 2000 bytes.
 	user = (t_Usuario*)malloc(50 * sizeof(t_Usuario)); 
-	
 	
 	// ler o Ranking do arquivo.	
 	lerRanking(user, &qtdJogadores);

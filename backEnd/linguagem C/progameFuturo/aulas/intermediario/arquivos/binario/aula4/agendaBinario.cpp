@@ -168,7 +168,7 @@ int lerB(char arquivo[], t_Contato **contato) {
 		while(fread(novo, sizeof(t_Contato), 1, file)) {
 			contato[quantidade] = novo;
 			quantidade++;
-			novo = (t_Contato*)malloc(sizeof(t_Contato));
+			novo = (t_Contato*)malloc(sizeof(t_Contato)); 
 		}
 		fclose(file);
 	} else

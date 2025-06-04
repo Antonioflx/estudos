@@ -1,0 +1,60 @@
+/*
+    Funcao para dar up no migration 
+
+    public function up() {
+
+    Schema -> class para fazer criação/atualização de tabelas
+    
+        // criar uma tabela producst
+   
+        Schema::create('products', function (Blueprint $table) {
+            $table->id(); -> id
+            $table->timestamps(); -> create_at, update_at.
+        });
+
+        // renomear a tabela products -> produto
+        // rename(from, to);
+        Schema::rename('products', 'produtos');
+
+        // excluir uma tabela caso exista
+        Schema::dropIfExists('produtos');
+
+        // criar uma tabela gestor
+        Schema::create('gestor', function (Blueprint $table) {
+            $table->id();
+            $table->id('sala_id');
+            $table->timestamps();
+        });
+
+        // criando uma nova coluna name para o gestor.
+        Schema::table('gestor', function(Blueprint $table) {
+            $table->string('name');
+        });
+
+        // criando username ( para excluir ) e criando qualquer coisa
+        Schema::table('gestor', function(Blueprint $table) {
+            $table->string('username');
+            $table->string('jogar');
+        });
+
+        // alterando colunas da tabela gestor
+        Schema::table('gestor', function(Blueprint $table) {
+            $table->dropColumn('username'); // deletando coluna
+            $table->renameColumn('jogar', 'plays'); // renomeando
+            $table->string('name', 50)->change(); // alterando o tamanho da coluna name para 50
+            // $table->string('name', 50)->nullable()->change(); alterando para que fosse anulável
+        });
+
+
+        //excluir tabela produtos se existir
+        Schema::dropIfExists('produtos');
+    }
+
+
+    Reverter
+    public function dows() {
+
+
+
+    }
+*/

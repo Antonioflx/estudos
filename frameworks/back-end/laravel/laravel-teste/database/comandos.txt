@@ -1,0 +1,131 @@
+
+## Estrutura de software -> MODEL VIEW CONTROLLER (MVC) 
+
+Requisição do usuário ( HTTP )
+
+	1. Controller 
+		-> Responsável pega lógica e regra de negócio da aplicação 
+		-> Precisa acessar o banco de dados?
+			-> S. 
+			   -> Pega a requisição do usuário e ve se precisa acessar o Model para poder manipular o banco de dados
+			-> Se nao
+			   -> Vai para View
+
+	2. Model
+		-> Gerenciamento e manipulação do Banco de Dados da aplicação
+
+	3. View 
+		-> View	devolve o HTML -> resposta
+		-> Controller acessa o Model e envia os dados para View de acordo com a demanda das requisições do usuário
+
+## ROTAS
+// view -> fica dentro de resources/views
+// verbos HTTP -> metodos dessa requisição HTTP 
+// get , post, puts, delete, patch, options
+
+/*
+    Passa 2 parametros
+        1. Rota em questão
+        2. função de callback
+*/
+
+EX: Route::get('/empresa', function (){
+    return view('empresa');
+});
+
+tem que criar um arquivo empresa.blade.php em view ( tem que usar .blade)
+
+
+## CONTROLLERS -> Camada responsável pela lógica e toda regra de negócio da aplicação
+	php make:controller ProdutoController
+
+
+	// trabalhando com controller -> tira o callback
+	/*
+    	1 parametro é a rota
+    	2 parametro é o controller
+       		-> dentro do 2 parametro
+        	-> o metodo
+
+	*/
+
+	Route::get('/', [ProdutoController::class, 'index']);
+
+// ----------------- resource ------------------ //
+
+	php make:controller ProdutoController --resource 
+		-> possui um controller com diversos métodos ( pré configurados para trabalhar )
+
+// ----------------------------------------------//	
+
+	php artisan route:list -> mostra a list da url
+	
+## MIGRATION -> Fazer alterações nas tabelas do banco de dados
+
+php artisan make:migration "nome" -> Cria uma migration para atualizar a tabela
+
+php artisan migrate -> Roda os migrations
+
+php artisan migrate:rollback -> volta a última migration
+
+php artisan migrate:reset -> volta todas as migrations anteriores
+
+php artisan migrate:refresh -> reseta e roda todas as migrations
+
+php artisan migrate:fresh -> Exclui todas as tabelas e roda todas as migrations
+
+php artisan migrate:status -> Ele vê os status de todas as migrations
+
+php artisan make:model Categoria --migration --controller -resource
+ou
+php artisan make:model Categoria -m -cr
+ou
+php artisan make:model Categoria -mcr
+
+
+Cria um model Categoria, com uma migração e controller com as funções
+
+## MODIFICAS COLUNAS
+
+-> Tem que instalar composer require doctrine/dbal
+-> Ir em config/database.php
+-> Acrescentar no arquivo:
+
+	1 (TOPO) : use Illuminate\Database\DBAL\TimestampType;
+
+	2 (BODY) : 'dbal' => [
+    			'types' => [
+        		'timestamp' => TimestampType::class,
+    			],
+	    	    ],
+
+## MODEL 
+	-> Representação de uma Entidade no Banco de Dados ( Produtos, Usuários )
+	-> Responsável para manipulação do Banco de Dados
+
+php artisan make:model "nome" -> Criar um model
+
+
+## SEEDER -> Recurso para inserir registros no banco de dados
+php artisan make:seeder UsersSeeder nome -> fazer o seeder
+
+php artisan db:seed -> rotar os seedes
+
+## Factory -> fazer registros em massas
+
+php artisan make:factory CategoriaFactory
+
+precisa de um seeder para executar
+
+## GERANDO TUDO
+
+php artisan make:model Teste -mfscr
+
+M -> Model
+F -> Factory
+S -> Seeder
+C -> Controler
+R -> Resource
+
+// ler dps
+php artisan make:policy ReservaPolicy --model=Reserva
