@@ -21,6 +21,9 @@
     <li>
         <strong>React</strong>
     </li>
+   <li>
+        <strong>NextJS</strong>
+    </li>
  </ul>
 
 
@@ -36,7 +39,6 @@
    <li>Oracle</li>
    <li>VariantesC:</li>
      <ol type="1">
-      <li>Linguagem C (Estudando o avançado)</li>
       <li>Linguagem C++</li>
       <li>Lingaugem C#</li>
      </ol>
