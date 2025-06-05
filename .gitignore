@@ -1,0 +1,13 @@
+frameworks/**/node_modules/
+
+frameworks/**/.next/
+frameworks/**/dist/
+frameworks/**/build/
+frameworks/**/.out/
+
+*.env*
+*.log
+
+
+/*.json
+!/frameworks/
