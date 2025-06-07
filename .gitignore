@@ -1,5 +1,5 @@
 frameworks/**/node_modules/
-
+progress.md
 frameworks/**/.next/
 frameworks/**/dist/
 frameworks/**/build/
