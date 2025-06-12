@@ -21,3 +21,13 @@ const dst = [0];
 src.forEach((item) => dst.push(item));
 
 console.log(dst);
+
+const f4 = function (): void {
+	// @ts-expect-error
+	return true;
+};
+
+function f5(): void {
+	// @ts-expect-error
+	return true;
+}

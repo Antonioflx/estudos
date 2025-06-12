@@ -40,11 +40,11 @@
 
 - [x] Anotações de tipo de parâmetro
 - [x] Anotações de tipo de retorno
-- [ ] Funções anônimas
-- [ ] Parâmetros opcionais e padrão
-- [ ] Tipo `void`
-- [ ] Funções com `never`
-- [ ] Parâmetros rest e sobrecarga
+- [x] Funções anônimas
+- [x] Parâmetros opcionais e padrão
+- [x] Tipo `void`
+- [x] Funções com `never`
+- [x] Parâmetros rest e sobrecarga
 
 ---
 
